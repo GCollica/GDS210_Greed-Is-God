@@ -5,7 +5,6 @@ using UnityEngine;
 public class RoomController : MonoBehaviour
 {
     public bool roomActive = false;
-    public GameObject[] spawners;
 
     // Start is called before the first frame update
     void Start()
