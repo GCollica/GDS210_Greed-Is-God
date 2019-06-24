@@ -4,34 +4,33 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private string moveInputAxis = "Vertical";
-    private string turnInputAxis = "Horizontal";
 
-    public float rotationRate = 360;
+    public float xVel;
+    public float yVel;
+    public float speed;
 
-    public float moveSpeed = 2;
+    private Rigidbody rb;
+
+    void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
+    void Start()
+    {
+
+    }
 
     void Update()
     {
-        float moveAxis = Input.GetAxis(moveInputAxis);
-        float turnAxis = Input.GetAxis(turnInputAxis);
-
-        ApplyInput(moveAxis, turnAxis);
+        Move();
     }
 
-    private void ApplyInput(float moveinput, float turnInput)
+    void Move()
     {
-        Move(moveinput);
-        Turn(turnInput);
-    }
+        xVel = Input.GetAxis("LeftJoystickHorizontal");
+        yVel = Input.GetAxis("LeftJoystickVertical");
 
-    private void Move(float input)
-    {
-        transform.Translate(Vector3.forward * input * moveSpeed);
-    }
-
-    private void Turn(float input)
-    {
-        transform.Rotate(0, input * rotationRate * Time.deltaTime, 0);
+        rb.velocity = new Vector3(xVel * speed, 0, yVel * speed);   
     }
 }
