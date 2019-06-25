@@ -10,6 +10,8 @@ TagManager:
   - PlayerTwo
   - PlayerThree
   - PlayerFour
+  - Projectile
+  - Food
   layers:
   - Default
   - TransparentFX
@@ -19,12 +21,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Environment
+  - Projectile
+  - Coins
+  - Props
+  - Food
   - 
   - 
   - 

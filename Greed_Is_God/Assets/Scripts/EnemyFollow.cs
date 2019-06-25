@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class EnemyFollow : MonoBehaviour
 {
-    public GameObject Player;
+    public GameObject player;
 
 
     public float thrust;
     Rigidbody rb;
 
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void FixedUpdate()
@@ -22,6 +23,6 @@ public class EnemyFollow : MonoBehaviour
 
     void Update()
     {
-        transform.LookAt(Player.transform);
+        transform.LookAt(player.transform);
     }
 }
