@@ -6,6 +6,12 @@ TagManager:
   tags:
   - Door
   - Key
+  - PlayerOne
+  - PlayerTwo
+  - PlayerThree
+  - PlayerFour
+  - Projectile
+  - Food
   layers:
   - Default
   - TransparentFX
@@ -15,12 +21,12 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Player
+  - Environment
+  - Projectile
+  - Coins
+  - Props
+  - Food
   - 
   - 
   - 

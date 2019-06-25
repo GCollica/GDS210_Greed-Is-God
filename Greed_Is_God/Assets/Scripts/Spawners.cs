@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Spawners : MonoBehaviour
 {
+    private float spawnerHealth = 3.0f;
     public GameObject enemy;
     public GameObject [] spawnPoints;
-    private GameObject chosenSpawnPoint;
     private int spawnCount;
     private float spawnDelay = 1f;
     private float spawnTimer = 0f;
@@ -24,7 +24,12 @@ public class Spawners : MonoBehaviour
         if(roomControllerScript.roomActive == true)
         {
             SpawnTimer();
-        }      
+        }
+        
+        if(spawnerHealth <= 0f)
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     public void Spawn()
@@ -46,6 +51,14 @@ public class Spawners : MonoBehaviour
         {
             Spawn();
             spawnTimer = 0f;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Projectile"))
+        {
+            spawnerHealth -= 1.0f;
         }
     }
 }
