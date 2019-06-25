@@ -8,19 +8,19 @@ public class PManager : MonoBehaviour
     public GameObject arrows;
     public GameObject spawnPoint;
 
+    public float rightTrigger; 
+
     void Update()
     {
-        //For testing purposes only
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Shoot();
-        }
-
+        Shoot();                 
     }
 
     public void Shoot()
     {
-        Instantiate(arrows, spawnPoint.transform.position, Quaternion.identity);
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetAxis("RightTrigger") == 1)
+        {
+            Instantiate(arrows, spawnPoint.transform.position, Quaternion.identity);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
