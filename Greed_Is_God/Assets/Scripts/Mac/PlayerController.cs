@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
     void OverrideRotation()
     {
         //Stops the player from snapping back to 0 rotation
-        if (Mathf.Abs(xRot) < 1 && Mathf.Abs(yRot) < 1)
+        if (xRot == 0 && (yRot) == 0)
             return;
 
         //For aim while standing still
