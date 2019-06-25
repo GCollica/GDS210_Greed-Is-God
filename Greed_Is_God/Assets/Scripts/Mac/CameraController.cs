@@ -11,7 +11,6 @@ public class CameraController : MonoBehaviour
 
     Vector3 targetPos;
 
-    // Update is called once per frame
     void Update()
     {
         MoveWithTarget();
@@ -19,7 +18,10 @@ public class CameraController : MonoBehaviour
 
     void MoveWithTarget()
     {
+        //Sets the Camera's position to the player + the offset value
         targetPos = target.position + offsetPos;
+
+        //Sets the cameras target to the player position and smooths the movement  
         transform.position = Vector3.Lerp(transform.position, targetPos, moveSpeed * Time.deltaTime);
     }
 }
