@@ -8,7 +8,7 @@ public class EnemyFollow : MonoBehaviour
 
 
     public float thrust;
-    public Rigidbody rb;
+    Rigidbody rb;
 
     void Start()
     {
