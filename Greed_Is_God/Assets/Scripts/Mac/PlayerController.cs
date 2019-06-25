@@ -20,45 +20,55 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
     }
 
-    void Start()
-    {
-
-    }
-
-    void FixedUpdate()
-    {
-        //Vector3 lookDirection = new Vector3(xRot, 0, yRot);
-        //Vector3 movement = new Vector3(xVel, 0.0f, yVel);
-        //if (xVel != 0 || yVel != 0)
-        //{
-        //    transform.rotation = Quaternion.LookRotation(lookDirection, Vector3.back);
-        //}
-    }
-
     void Update()
     {
-        CharacterMove();   
+        GetInput();
+        OverrideRotation();
+
+        //Stops the player from snapping back to 0 rotation
+        if (Mathf.Abs(xVel) < 1 && Mathf.Abs(yVel) < 1)
+            return;
+
+        Move();   
     }
 
-    void CharacterMove()
+    void GetInput()
     {
-        xVel = Input.GetAxis("LeftJoystickHorizontal");
-        yVel = Input.GetAxis("LeftJoystickVertical");
+        //Left analogue sick movement
+        xVel = Input.GetAxis("LeftJoystickHorizontal") * moveSpeed;
+        yVel = Input.GetAxis("LeftJoystickVertical") * moveSpeed;
 
+        //Right analogue sick movement
         xRot = Input.GetAxisRaw("RightJoystickHorizontal");
         yRot = Input.GetAxisRaw("RightJoystickVertical");
+    }
 
-        rb.velocity = new Vector3(xVel * moveSpeed, 0, yVel * moveSpeed);
+    void OverrideRotation()
+    {
+        //Stops the player from snapping back to 0 rotation
+        if (Mathf.Abs(xRot) < 1 && Mathf.Abs(yRot) < 1)
+            return;
 
+        //For aim while standing still
+        Vector3 lookDirection = new Vector3(xRot, 0, yRot);
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookDirection), 0.5f);
+        
+    }
+
+    void Move()
+    {
+        rb.velocity = new Vector3(xVel , 0, yVel);
+
+        //Makes the player look in the move direction unless there is input in the right analogue stick
         if (xRot == 0 && yRot == 0)
         {
-            //For making the player look in the direction of the left analogue stick
+            //So player faces the move direction
             Vector3 movement = new Vector3(xVel, 0.0f, yVel);
-            transform.rotation = Quaternion.LookRotation(movement);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 1);
         }
         else
         {
-            //For making the player look in the direction of the right analogue stick
+            //For aim while moving 
             Vector3 lookDirection = new Vector3(xRot, 0, yRot);
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookDirection), 0.5f);
         }
