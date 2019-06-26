@@ -6,9 +6,10 @@ using UnityEngine;
 
 public class MenuButtons : MonoBehaviour
 {
+
     public void PlayButton()
     {
-        SceneManager.LoadScene("AlphaTestScene");
+        SceneManager.LoadScene("Mac's_Alpha");
     }
 
     public void ControlsButton()
@@ -20,4 +21,15 @@ public class MenuButtons : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    void Update()
+    {
+        Scene scene = SceneManager.GetActiveScene();
+
+        if (scene.name == ("Controls") && Input.GetButtonDown("BackButton"))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+    }
 }
+   
