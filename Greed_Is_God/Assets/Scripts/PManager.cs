@@ -6,7 +6,7 @@ public class PManager : MonoBehaviour
 {
     private int health = 5;
     private int goldValue;
-    private int keyCount;
+    public int keyCount;
     public GameObject arrows;
     public GameObject spawnPoint;
     public GameObject player;
