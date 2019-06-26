@@ -18,8 +18,11 @@ public class PlayerController : MonoBehaviour
     public bool player1;
     public bool player2;
 
+    private PManager PM;
+
     void Awake()
     {
+        PM = gameObject.GetComponent<PManager>();
         rb = GetComponent<Rigidbody>();
         JoystickCheck();
     }
@@ -47,14 +50,16 @@ public class PlayerController : MonoBehaviour
 
     void JoystickCheck()
     {
-        if (this.gameObject.name == "Player_1")
+        if (gameObject.name == "Player_1")
         {
             player1 = true;
+            print("Player 1 Connected");
         }
 
-        if (this.gameObject.name == "Player_2")
+        if (gameObject.name == "Player_2")
         {
             player2 = true;
+            print("Player 2 Connected");
         }
     }
 
@@ -67,6 +72,9 @@ public class PlayerController : MonoBehaviour
         //Right analogue sick movement
         xRot = Input.GetAxisRaw("RightJoystickHorizontal");
         yRot = Input.GetAxisRaw("RightJoystickVertical");
+
+        if (xRot != 0 || yRot != 0)
+            PM.Shoot();
     }
 
     void GetInputP2()
@@ -78,6 +86,9 @@ public class PlayerController : MonoBehaviour
         //Right analogue sick movement
         xRot = Input.GetAxisRaw("RightJoystickHorizontal_2");
         yRot = Input.GetAxisRaw("RightJoystickVertical_2");
+
+        if (xRot != 0 || yRot != 0)
+            PM.Shoot();
     }
 
     void OverrideRotation()
