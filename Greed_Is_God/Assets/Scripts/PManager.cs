@@ -22,16 +22,15 @@ public class PManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetAxis("RightTrigger") == 1)
         {
-            float roFTimer = 0f;
-            float roFValue = 0.75f;
-
-            roFTimer += Time.deltaTime;
-            if(roFTimer >= roFValue)
-            {
-                Instantiate(arrows, spawnPoint.transform.position, player.transform.rotation);
-                roFTimer = 0f;
-            }
+            
+            Instantiate(arrows, spawnPoint.transform.position, player.transform.rotation);
+            
         }
+    }
+
+    private void RateOfFire()
+    {
+        //
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -51,7 +50,7 @@ public class PManager : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Coin"))
         {
-            goldValue += 10;
+            goldCount += 10;
             Destroy(other.gameObject);
         }
         if (other.gameObject.CompareTag("Key"))
