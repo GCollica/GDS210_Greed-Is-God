@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PManager : MonoBehaviour
 {
-    private int health = 5;
-    private int goldValue;
+    public int health = 5;
+    public int goldCount;
     public int keyCount;
     public GameObject arrows;
     public GameObject spawnPoint;
@@ -22,7 +22,15 @@ public class PManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetAxis("RightTrigger") == 1)
         {
-            Instantiate(arrows, spawnPoint.transform.position, player.transform.rotation);
+            float roFTimer = 0f;
+            float roFValue = 0.75f;
+
+            roFTimer += Time.deltaTime;
+            if(roFTimer >= roFValue)
+            {
+                Instantiate(arrows, spawnPoint.transform.position, player.transform.rotation);
+                roFTimer = 0f;
+            }
         }
     }
 
