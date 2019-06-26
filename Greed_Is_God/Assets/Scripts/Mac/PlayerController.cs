@@ -15,14 +15,27 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody rb;
 
+    public bool player1;
+    public bool player2;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        JoystickCheck();
     }
 
     void Update()
     {
-        GetInput();
+        if (player1 == true)
+        {
+            GetInputP1();
+        }
+
+        if (player2 == true)
+        {
+            GetInputP2();
+        }
+
         OverrideRotation();
 
         //Stops the player from snapping back to 0 rotation
@@ -32,7 +45,20 @@ public class PlayerController : MonoBehaviour
         Move();   
     }
 
-    void GetInput()
+    void JoystickCheck()
+    {
+        if (this.gameObject.name == "Player_1")
+        {
+            player1 = true;
+        }
+
+        if (this.gameObject.name == "Player_2")
+        {
+            player2 = true;
+        }
+    }
+
+    void GetInputP1()
     {
         //Left analogue sick movement
         xVel = Input.GetAxis("LeftJoystickHorizontal") * moveSpeed;
@@ -41,6 +67,17 @@ public class PlayerController : MonoBehaviour
         //Right analogue sick movement
         xRot = Input.GetAxisRaw("RightJoystickHorizontal");
         yRot = Input.GetAxisRaw("RightJoystickVertical");
+    }
+
+    void GetInputP2()
+    {
+        //Left analogue sick movement
+        xVel = Input.GetAxis("LeftJoystickHorizontal_2") * moveSpeed;
+        yVel = Input.GetAxis("LeftJoystickVertical_2") * moveSpeed;
+
+        //Right analogue sick movement
+        xRot = Input.GetAxisRaw("RightJoystickHorizontal_2");
+        yRot = Input.GetAxisRaw("RightJoystickVertical_2");
     }
 
     void OverrideRotation()
