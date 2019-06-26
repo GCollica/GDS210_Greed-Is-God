@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
+        PM = gameObject.GetComponent<PManager>();
         rb = GetComponent<Rigidbody>();
         JoystickCheck();
     }
@@ -49,14 +50,16 @@ public class PlayerController : MonoBehaviour
 
     void JoystickCheck()
     {
-        if (this.gameObject.name == "Player_1")
+        if (gameObject.name == "Player_1")
         {
             player1 = true;
+            print("Player 1 Connected");
         }
 
-        if (this.gameObject.name == "Player_2")
+        if (gameObject.name == "Player_2")
         {
             player2 = true;
+            print("Player 2 Connected");
         }
     }
 

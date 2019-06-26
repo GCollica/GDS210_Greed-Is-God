@@ -13,19 +13,9 @@ public class PManager : MonoBehaviour
 
     public float rightTrigger; 
 
-    void Update()
-    {
-        Shoot();                 
-    }
-
     public void Shoot()
-    {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetAxis("RightTrigger") == 1)
-        {
-            
-            Instantiate(arrows, spawnPoint.transform.position, player.transform.rotation);
-            
-        }
+    {           
+        Instantiate(arrows, spawnPoint.transform.position, player.transform.rotation);                  
     }
 
     private void RateOfFire()
