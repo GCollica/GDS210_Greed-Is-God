@@ -9,18 +9,27 @@ public class Pickups : MonoBehaviour
     public GameObject key;
     public Image UIKeyImage;
 
+    public bool keyCollected;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Key"))
         {
+            keyCollected = true;
             Destroy(key);
-            UIKeyImage.enabled = true;
+            //UIKeyImage.enabled = true;
         }
 
-        if (UIKeyImage.enabled == true && other.CompareTag("Door"))
+        if (keyCollected == true && other.CompareTag("Door"))
         {
             Destroy(door);
-            UIKeyImage.enabled = false;
+            keyCollected = false;
         }
+
+        //if (UIKeyImage.enabled == true && other.CompareTag("Door"))
+        //{
+        //    Destroy(door);
+        //    UIKeyImage.enabled = false;
+        //}
     }
 }
