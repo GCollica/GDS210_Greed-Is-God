@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PManager : MonoBehaviour
 {
-    private int health = 5;
-    private int goldValue;
+    public int health = 5;
+    public int goldCount;
     public int keyCount;
     public GameObject arrows;
     public GameObject spawnPoint;
@@ -22,8 +22,15 @@ public class PManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetAxis("RightTrigger") == 1)
         {
+            
             Instantiate(arrows, spawnPoint.transform.position, player.transform.rotation);
+            
         }
+    }
+
+    private void RateOfFire()
+    {
+        //
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -43,7 +50,7 @@ public class PManager : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Coin"))
         {
-            goldValue += 10;
+            goldCount += 10;
             Destroy(other.gameObject);
         }
         if (other.gameObject.CompareTag("Key"))
