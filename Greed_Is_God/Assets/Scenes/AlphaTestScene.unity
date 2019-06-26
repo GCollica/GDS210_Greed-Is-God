@@ -203,6 +203,11 @@ PrefabInstance:
       propertyPath: spawnPoint
       value: 
       objectReference: {fileID: 396573916}
+    - target: {fileID: 3932133249437970760, guid: d19f7dbef487f63428b7ec8afb26f5fb,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 293933571}
     - target: {fileID: 5840645211889528646, guid: d19f7dbef487f63428b7ec8afb26f5fb,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -223,6 +228,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Interpolate
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6730459012515716967, guid: d19f7dbef487f63428b7ec8afb26f5fb,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d19f7dbef487f63428b7ec8afb26f5fb, type: 3}
@@ -693,6 +703,12 @@ Transform:
   m_Father: {fileID: 1952832690}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &293933571 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6730459012515716961, guid: d19f7dbef487f63428b7ec8afb26f5fb,
+    type: 3}
+  m_PrefabInstance: {fileID: 48892606}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &374807843
 GameObject:
   m_ObjectHideFlags: 0

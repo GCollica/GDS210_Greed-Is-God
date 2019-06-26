@@ -20,7 +20,7 @@ public class Projectile : MonoBehaviour
 
     void MoveForward()
     {
-        projectileRb.AddForce(transform.forward * thrust);
+        projectileRb.velocity = transform.forward * thrust;
     }
 
     private void OnCollisionEnter(Collision collision)
