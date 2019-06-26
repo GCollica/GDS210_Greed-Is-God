@@ -7,6 +7,7 @@ public class PManager : MonoBehaviour
     private int health = 5;
     public GameObject arrows;
     public GameObject spawnPoint;
+    public GameObject player;
 
     public float rightTrigger; 
 
@@ -19,7 +20,7 @@ public class PManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetAxis("RightTrigger") == 1)
         {
-            Instantiate(arrows, spawnPoint.transform.position, Quaternion.identity);
+            Instantiate(arrows, spawnPoint.transform.position, player.transform.rotation);
         }
     }
 
