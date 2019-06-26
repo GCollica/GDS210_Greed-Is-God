@@ -14,18 +14,16 @@ public class PManager : MonoBehaviour
     public float rightTrigger; 
 
     public void Shoot()
-    {           
-        Instantiate(arrows, spawnPoint.transform.position, player.transform.rotation);                
-        
+    {                         
         float nextFire = 0f;
-        float fireRate = 0.75f;
+        float fireRate = 5f;
 
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetAxis("RightTrigger") == 1 && Time.time > nextFire)
+        if (Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
-            Instantiate(arrows, spawnPoint.transform.position, player.transform.rotation);
-            
+            Instantiate(arrows, spawnPoint.transform.position, player.transform.rotation);          
         }
+
     }
 
     private void OnCollisionEnter(Collision collision)
