@@ -34,7 +34,8 @@ public class UIManager : MonoBehaviour
         p1KeycountText.text = "x " + p1KeycountValue.ToString();
 
         //gold
-        p1GoldcountValue 
+        p1GoldcountValue = p1PManager.goldCount;
+        p1GoldcountText.text = "$" + p1GoldcountValue.ToString();
 
         //health
     }
