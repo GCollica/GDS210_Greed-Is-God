@@ -6,7 +6,7 @@ public class GoldScript : MonoBehaviour
 {
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.tag == "PlayerOne")
+        if (collision.gameObject.tag == "Player")
         {
             PlayerOneScore.scoreValue += 10;
             DestroyGameObject();
