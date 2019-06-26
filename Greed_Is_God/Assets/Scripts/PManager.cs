@@ -5,6 +5,8 @@ using UnityEngine;
 public class PManager : MonoBehaviour
 {
     private int health = 5;
+    private int goldValue;
+    public int keyCount;
     public GameObject arrows;
     public GameObject spawnPoint;
     public GameObject player;
@@ -28,12 +30,31 @@ public class PManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Food"))
         {
-            if(health <= 4)
+            if(health <= 2)
             {
                 health++;
             }
 
             Destroy(collision.gameObject);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            goldValue += 10;
+            Destroy(other.gameObject);
+        }
+        if (other.gameObject.CompareTag("Key"))
+        {
+            keyCount++;
+            Destroy(other.gameObject);
+        }
+        if (other.gameObject.CompareTag("Door") && keyCount >= 1)
+        {
+            keyCount--;
+            Destroy(other.gameObject);
         }
     }
 
