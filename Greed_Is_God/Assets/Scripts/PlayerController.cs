@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     public bool player1;
     public bool player2;
 
+    private PManager PM;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -67,6 +69,9 @@ public class PlayerController : MonoBehaviour
         //Right analogue sick movement
         xRot = Input.GetAxisRaw("RightJoystickHorizontal");
         yRot = Input.GetAxisRaw("RightJoystickVertical");
+
+        if (xRot != 0 || yRot != 0)
+            PM.Shoot();
     }
 
     void GetInputP2()
@@ -78,6 +83,9 @@ public class PlayerController : MonoBehaviour
         //Right analogue sick movement
         xRot = Input.GetAxisRaw("RightJoystickHorizontal_2");
         yRot = Input.GetAxisRaw("RightJoystickVertical_2");
+
+        if (xRot != 0 || yRot != 0)
+            PM.Shoot();
     }
 
     void OverrideRotation()
