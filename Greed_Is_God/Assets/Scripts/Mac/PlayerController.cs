@@ -18,12 +18,10 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         rb = GetComponent<Rigidbody>();
-        JoystickCheck();
     }
 
     void Update()
     {
-       
         GetInput();
         OverrideRotation();
 
@@ -32,11 +30,6 @@ public class PlayerController : MonoBehaviour
             return;
 
         Move();   
-    }
-
-    void JoystickCheck()
-    {
-        Debug.Log(Input.GetJoystickNames());
     }
 
     void GetInput()
@@ -70,8 +63,8 @@ public class PlayerController : MonoBehaviour
         if (xRot == 0 && yRot == 0)
         {
             //So player faces the move direction
-            Vector3 movement = new Vector3(xVel, 0, yVel);
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.5f);
+            Vector3 movement = new Vector3(xVel, 0.0f, yVel);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 1);
         }
         else
         {
