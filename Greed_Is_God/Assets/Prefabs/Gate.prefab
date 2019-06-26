@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6675063594281739711}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pasted__pasted__pasted__group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3480394426346357685}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: group2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60,7 +60,7 @@ Transform:
   m_Children:
   - {fileID: 3692152256892060396}
   m_Father: {fileID: 4267249262387853958}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &964624918005811349
 GameObject:
@@ -72,7 +72,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4267249262387853958}
   - component: {fileID: 2564458590145284730}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Gate
   m_TagString: Door
   m_Icon: {fileID: 0}
@@ -90,6 +90,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 3.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 4358111446190062658}
   - {fileID: 604184952593233155}
   - {fileID: 6326645017586464424}
   - {fileID: 3480394426346357685}
@@ -123,7 +124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2041983037471136357}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pasted__pasted__group1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +157,7 @@ GameObject:
   - component: {fileID: 7130581511137551942}
   - component: {fileID: 7316545816195770609}
   - component: {fileID: 5711082929624468567}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pasted__pasted__pasted__pCube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -231,7 +232,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8772350095068071637}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: group4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -251,7 +252,7 @@ Transform:
   m_Children:
   - {fileID: 4967578375584920401}
   m_Father: {fileID: 4267249262387853958}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1937251303088775244
 GameObject:
@@ -262,7 +263,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4967578375584920401}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pasted__group2 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +294,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7013098037684936282}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: group5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +314,7 @@ Transform:
   m_Children:
   - {fileID: 5193246003634683456}
   m_Father: {fileID: 4267249262387853958}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3761670327406109616
 GameObject:
@@ -326,7 +327,7 @@ GameObject:
   - component: {fileID: 2159496673265362039}
   - component: {fileID: 5990360625100852013}
   - component: {fileID: 5979492114374288563}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pasted__pasted__pCube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -403,7 +404,7 @@ GameObject:
   - component: {fileID: 5193246003634683456}
   - component: {fileID: 8858797040837487857}
   - component: {fileID: 7105143699670079689}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pasted__pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -478,7 +479,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7004596277052072785}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pasted__pasted__group1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -509,7 +510,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3692152256892060396}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pasted__group1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,7 +541,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7344245585821933028}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pasted__group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -573,7 +574,7 @@ GameObject:
   - component: {fileID: 4089879304053993759}
   - component: {fileID: 3698497233861709820}
   - component: {fileID: 4811002288083214250}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -592,7 +593,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4267249262387853958}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &3698497233861709820
 MeshFilter:
@@ -648,7 +649,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8550930688336561962}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pasted__pasted__group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -679,7 +680,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6326645017586464424}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: group1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -699,7 +700,7 @@ Transform:
   m_Children:
   - {fileID: 7344245585821933028}
   m_Father: {fileID: 4267249262387853958}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5380239077787796025
 GameObject:
@@ -710,7 +711,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3616440142918340602}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pasted__pasted__pasted__group 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -732,6 +733,50 @@ Transform:
   m_Father: {fileID: 7004596277052072785}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6285439816515796173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4358111446190062658}
+  - component: {fileID: 2097553336024954979}
+  m_Layer: 12
+  m_Name: GateTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4358111446190062658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6285439816515796173}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4267249262387853958}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &2097553336024954979
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6285439816515796173}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 5.8060126, z: 5.0710597}
+  m_Center: {x: 3.877577e-16, y: 2.9011953, z: -0.09771395}
 --- !u!1 &6467205422232433299
 GameObject:
   m_ObjectHideFlags: 0
@@ -741,7 +786,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8274190221442697176}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: group3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -761,7 +806,7 @@ Transform:
   m_Children:
   - {fileID: 6063607101986753715}
   m_Father: {fileID: 4267249262387853958}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6731614588459473565
 GameObject:
@@ -774,7 +819,7 @@ GameObject:
   - component: {fileID: 7385747157074457627}
   - component: {fileID: 5391784373306313329}
   - component: {fileID: 1537429720650135716}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pasted__pCube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -849,7 +894,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 604184952593233155}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -869,7 +914,7 @@ Transform:
   m_Children:
   - {fileID: 7385747157074457627}
   m_Father: {fileID: 4267249262387853958}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7961492849475822351
 GameObject:
@@ -882,7 +927,7 @@ GameObject:
   - component: {fileID: 6545187247783711061}
   - component: {fileID: 386687644509987059}
   - component: {fileID: 8475932606267610199}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pCube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -901,7 +946,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4267249262387853958}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &386687644509987059
 MeshFilter:
@@ -959,7 +1004,7 @@ GameObject:
   - component: {fileID: 1191214692717758603}
   - component: {fileID: 2910407260681725162}
   - component: {fileID: 2242129976543308250}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pasted__pasted__pasted__pasted__pCube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1034,7 +1079,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6063607101986753715}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pasted__group2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1067,7 +1112,7 @@ GameObject:
   - component: {fileID: 5460432778979801564}
   - component: {fileID: 2768326752659443557}
   - component: {fileID: 6306953588854468085}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: pasted__pasted__pasted__pasted__pCube1 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
