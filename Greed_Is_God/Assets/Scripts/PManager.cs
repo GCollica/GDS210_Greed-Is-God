@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PManager : MonoBehaviour
 {
-    public int health = 5;
+    public int health = 3;
     public int goldCount;
     public int keyCount;
     public GameObject arrows;
@@ -46,6 +46,12 @@ public class PManager : MonoBehaviour
             }
 
             Destroy(collision.gameObject);
+        }
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            health -= 1;
+            Debug.Log("Ouch");
         }
     }
 

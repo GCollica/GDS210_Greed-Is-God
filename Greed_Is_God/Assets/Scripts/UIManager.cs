@@ -14,8 +14,8 @@ public class UIManager : MonoBehaviour
     private int p1GoldcountValue;
 
     //health
-    public Image p1Healthcount;
-    private int p1HealthValue;
+    public static int health;
+    public GameObject heart1, heart2, heart3;
 
     public GameObject p1;
     private PManager p1PManager;
@@ -24,6 +24,11 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         p1PManager = p1.GetComponent<PManager>();
+
+        health = 3;
+        heart1.gameObject.SetActive(true);
+        heart2.gameObject.SetActive(true);
+        heart3.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -37,6 +42,20 @@ public class UIManager : MonoBehaviour
         p1GoldcountValue = p1PManager.goldCount;
         p1GoldcountText.text = "$" + p1GoldcountValue.ToString();
 
-        //health
+        //health limit
+        if (health > 3)
+            health = 3;
+
+        if (health == 2)
+            heart3.gameObject.SetActive(false);
+
+        if (health == 1)
+            heart2.gameObject.SetActive(false);
+            heart3.gameObject.SetActive(false);
+
+        if (health == 0)
+            heart1.gameObject.SetActive(false);
+            heart2.gameObject.SetActive(false);
+            heart3.gameObject.SetActive(false);
     }
 }
