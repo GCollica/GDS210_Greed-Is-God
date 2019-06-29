@@ -2373,16 +2373,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player HUD
       objectReference: {fileID: 0}
-    - target: {fileID: 4150678843779824693, guid: 927ddb806a8fdb74f8983e70d1a2ba48,
-        type: 3}
-      propertyPath: m_FontData.m_HorizontalOverflow
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4150678843779824693, guid: 927ddb806a8fdb74f8983e70d1a2ba48,
-        type: 3}
-      propertyPath: m_FontData.m_VerticalOverflow
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4150678843119722907, guid: 927ddb806a8fdb74f8983e70d1a2ba48,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2671,21 +2661,45 @@ PrefabInstance:
       propertyPath: m_Text
       value: x 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1123355436137678827, guid: 927ddb806a8fdb74f8983e70d1a2ba48,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 3f4660bfba59e874b8caf6415344ac95,
+        type: 3}
     - target: {fileID: 8421729513500652956, guid: 927ddb806a8fdb74f8983e70d1a2ba48,
+        type: 3}
+      propertyPath: m_Text
+      value: x 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8421729513500652956, guid: 927ddb806a8fdb74f8983e70d1a2ba48,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 3f4660bfba59e874b8caf6415344ac95,
+        type: 3}
+    - target: {fileID: 7124583095172711141, guid: 927ddb806a8fdb74f8983e70d1a2ba48,
         type: 3}
       propertyPath: m_Text
       value: x 0
       objectReference: {fileID: 0}
     - target: {fileID: 7124583095172711141, guid: 927ddb806a8fdb74f8983e70d1a2ba48,
         type: 3}
-      propertyPath: m_Text
-      value: x 0
-      objectReference: {fileID: 0}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 3f4660bfba59e874b8caf6415344ac95,
+        type: 3}
     - target: {fileID: 9023451426101900613, guid: 927ddb806a8fdb74f8983e70d1a2ba48,
         type: 3}
       propertyPath: m_Text
       value: x 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9023451426101900613, guid: 927ddb806a8fdb74f8983e70d1a2ba48,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 3f4660bfba59e874b8caf6415344ac95,
+        type: 3}
     - target: {fileID: 226669723268783298, guid: 927ddb806a8fdb74f8983e70d1a2ba48,
         type: 3}
       propertyPath: p1
