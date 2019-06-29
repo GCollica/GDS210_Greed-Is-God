@@ -66,12 +66,12 @@ public class PlayerController : MonoBehaviour
     void GetInputP1()
     {
         //Left analogue sick movement
-        xVel = Input.GetAxis("LeftJoystickHorizontal") * moveSpeed;
-        yVel = Input.GetAxis("LeftJoystickVertical") * moveSpeed;
+        xVel = Input.GetAxis("LeftJoystickHorizontal_1") * moveSpeed;
+        yVel = Input.GetAxis("LeftJoystickVertical_1") * moveSpeed;
 
         //Right analogue sick movement
-        xRot = Input.GetAxisRaw("RightJoystickHorizontal");
-        yRot = Input.GetAxisRaw("RightJoystickVertical");
+        xRot = Input.GetAxisRaw("RightJoystickHorizontal_1");
+        yRot = Input.GetAxisRaw("RightJoystickVertical_1");
 
         if (xRot != 0 || yRot != 0)
             PM.Shoot();
