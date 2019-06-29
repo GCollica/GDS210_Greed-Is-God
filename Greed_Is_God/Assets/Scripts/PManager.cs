@@ -7,6 +7,7 @@ public class PManager : MonoBehaviour
     public int health = 3;
     public int goldCount;
     public int keyCount;
+    float nextFire = 0f;
     public GameObject arrows;
     public GameObject spawnPoint;
     public GameObject player;
@@ -14,9 +15,8 @@ public class PManager : MonoBehaviour
     public float rightTrigger; 
 
     public void Shoot()
-    {                         
-        float nextFire = 0f;
-        float fireRate = 5f;
+    {                                 
+        float fireRate = .5f;
 
         if (Time.time > nextFire)
         {
