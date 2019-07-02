@@ -9,7 +9,14 @@ public class CameraController : MonoBehaviour
     public float moveSpeed = 5;
     public float smoothSpeed = 0.5f;
 
+    public PManager pManager;
+
     Vector3 targetPos;
+
+    void Awake()
+    {
+        pManager = gameObject.GetComponent<PManager>();
+    }
 
     void Update()
     {
@@ -23,5 +30,10 @@ public class CameraController : MonoBehaviour
 
         //Sets the cameras target to the player position and smooths the movement  
         transform.position = Vector3.Lerp(transform.position, targetPos, moveSpeed * Time.deltaTime);
+    }
+
+    void GodGreed()
+    {
+        //targetPos = pManager.greedGod;
     }
 }

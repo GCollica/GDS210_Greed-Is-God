@@ -10,12 +10,17 @@ PrefabInstance:
     - target: {fileID: 1942702236752684967, guid: ca3e07a09e8f01b48a29bc800fe17a57,
         type: 3}
       propertyPath: m_Name
-      value: P2
+      value: Player_2
       objectReference: {fileID: 0}
     - target: {fileID: 1942702236752684967, guid: ca3e07a09e8f01b48a29bc800fe17a57,
         type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1942702236752684967, guid: ca3e07a09e8f01b48a29bc800fe17a57,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1942702236752684962, guid: ca3e07a09e8f01b48a29bc800fe17a57,
         type: 3}
@@ -87,5 +92,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9a70705fd29c03840a55613d8d883422, type: 2}
+    - target: {fileID: 7625773336347528235, guid: ca3e07a09e8f01b48a29bc800fe17a57,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca3e07a09e8f01b48a29bc800fe17a57, type: 3}

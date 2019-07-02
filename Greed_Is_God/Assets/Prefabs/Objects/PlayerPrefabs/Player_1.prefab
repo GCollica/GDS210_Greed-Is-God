@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 1942702236752684964}
   - component: {fileID: 1942702236752684965}
   - component: {fileID: 1942702236752684966}
-  m_Layer: 0
-  m_Name: P1
-  m_TagString: Untagged
+  m_Layer: 8
+  m_Name: Player_1
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,6 +86,12 @@ MonoBehaviour:
   player2: 0
   player3: 0
   player4: 0
+  scores: 
+  player1score: 0
+  player2score: 0
+  player3score: 0
+  player4score: 0
+  greedGod: 0
 --- !u!114 &1942702236752684966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,6 +157,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 9afcb3dbebe45d946952d5bc4070f077,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 9afcb3dbebe45d946952d5bc4070f077,
         type: 3}

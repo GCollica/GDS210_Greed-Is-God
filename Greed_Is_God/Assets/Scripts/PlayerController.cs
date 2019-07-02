@@ -20,11 +20,18 @@ public class PlayerController : MonoBehaviour
     public bool player3;
     public bool player4;
 
-    private PManager PM;
+    public List<int> scores;
+    public int player1score;
+    public int player2score;
+    public int player3score;
+    public int player4score;
+    public int greedGod;
+
+    private PManager pManager;
 
     void Awake()
     {
-        PM = gameObject.GetComponent<PManager>();
+        pManager = gameObject.GetComponent<PManager>();
         rb = GetComponent<Rigidbody>();
         JoystickCheck();
     }
@@ -33,6 +40,7 @@ public class PlayerController : MonoBehaviour
     {
         PlayerActivate();
         OverrideRotation();
+        //StoreScore();
 
         //Stops the player from snapping back to 0 rotation
         if (Mathf.Abs(xVel) < 1 && Mathf.Abs(yVel) < 1)
@@ -76,21 +84,25 @@ public class PlayerController : MonoBehaviour
         if (player1 == true)
         {
             GetInputP1();
+            return;
         }
 
         if (player2 == true)
         {
             GetInputP2();
+            return;
         }
 
         if (player3 == true)
         {
             GetInputP2();
+            return;
         }
 
         if (player4 == true)
         {
             GetInputP2();
+            return;
         }
     }
 
@@ -106,7 +118,7 @@ public class PlayerController : MonoBehaviour
         yRot = Input.GetAxisRaw("RightJoystickVertical_1");
 
         if (xRot != 0 || yRot != 0)
-            PM.Shoot();
+            pManager.Shoot();
     }
 
     //Player 2 inputs
@@ -121,7 +133,7 @@ public class PlayerController : MonoBehaviour
         yRot = Input.GetAxisRaw("RightJoystickVertical_2");
 
         if (xRot != 0 || yRot != 0)
-            PM.Shoot();
+            pManager.Shoot();
     }
 
     //Player 3 inputs
@@ -136,7 +148,7 @@ public class PlayerController : MonoBehaviour
         yRot = Input.GetAxisRaw("RightJoystickVertical_2");
 
         if (xRot != 0 || yRot != 0)
-            PM.Shoot();
+            pManager.Shoot();
     }
 
     //Player 4 inputs
@@ -151,7 +163,7 @@ public class PlayerController : MonoBehaviour
         yRot = Input.GetAxisRaw("RightJoystickVertical_2");
 
         if (xRot != 0 || yRot != 0)
-            PM.Shoot();
+            pManager.Shoot();
     }
 
     //For aim when not moving
@@ -184,6 +196,44 @@ public class PlayerController : MonoBehaviour
             //Allows player to aim and shoot while moving
             Vector3 lookDirection = new Vector3(xRot, 0, yRot);
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookDirection), 0.5f);
+        }
+    }
+
+
+    void StoreScore()
+    {
+        if (player1 == true)
+        {
+            player1score = pManager.goldCount;
+        }
+
+        if (player2 == true)
+        {
+            player2score = pManager.goldCount; ;
+        }
+
+        if (player3 == true)
+        {
+            player3score = pManager.goldCount; ;
+        }
+
+        if (player4 == true)
+        {
+            player4score = pManager.goldCount; ;
+        }
+
+        scores.Add(player1score);
+        scores.Add(player2score);
+        scores.Add(player3score);
+        scores.Add(player4score);
+
+        scores.Sort();
+
+
+        for (int i = scores.Count; i-- > 0;)
+        {
+            greedGod = scores[1];
+            print(greedGod);
         }
     }
 }

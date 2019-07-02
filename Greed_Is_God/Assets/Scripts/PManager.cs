@@ -12,18 +12,18 @@ public class PManager : MonoBehaviour
     public GameObject spawnPoint;
     public GameObject player;
 
-    public List<int> scores;
-    public int player1score;
-    public int player2score;
-    public int player3score;
-    public int player4score;
-    public int greedGod;
 
     public float rightTrigger;
 
+
+    void Start()
+    {
+
+    }
+
     void Update()
     {
-        StoreScore();
+
     }
 
     public void Shoot()
@@ -76,39 +76,5 @@ public class PManager : MonoBehaviour
         }
     }
 
-    void StoreScore() {
-        if (gameObject.name == "Player_1")
-        {
-            player1score = goldCount;
-        }
-
-        if (gameObject.name == "Player_2")
-        {
-            player2score = goldCount; ;
-        }
-
-        if (gameObject.name == "Player_3")
-        {    
-            player3score = goldCount; ;
-        }
-
-        if (gameObject.name == "Player_4")
-        {
-            player4score = goldCount; ;
-        }
-
-        scores.Add(player1score);
-        scores.Add(player2score);
-        scores.Add(player3score);
-        scores.Add(player4score);
-
-        scores.Sort();
-
-
-        for (int i = scores.Count; i-- > 0;)
-        {
-            greedGod = scores[1];
-        }
-    }
 
 }
