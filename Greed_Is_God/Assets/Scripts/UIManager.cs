@@ -15,7 +15,7 @@ public class UIManager : MonoBehaviour
 
     //health
     public static int health;
-    public GameObject heart1, heart2, heart3;
+    public GameObject p1Heart1, p1Heart2, p1Heart3;
 
     public GameObject p1;
     private PManager p1PManager;
@@ -26,9 +26,6 @@ public class UIManager : MonoBehaviour
         p1PManager = p1.GetComponent<PManager>();
 
         health = 3;
-        heart1.gameObject.SetActive(true);
-        heart2.gameObject.SetActive(true);
-        heart3.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -43,19 +40,31 @@ public class UIManager : MonoBehaviour
         p1GoldcountText.text = "$" + p1GoldcountValue.ToString();
 
         //health limit
-        if (health > 3)
-            health = 3;
+        if (health == 3)
+        {
+            p1Heart1.gameObject.SetActive(true);
+            p1Heart2.gameObject.SetActive(true);
+            p1Heart3.gameObject.SetActive(true);
+        }
 
         if (health == 2)
-            heart3.gameObject.SetActive(false);
-
+        {
+            p1Heart1.gameObject.SetActive(true);
+            p1Heart2.gameObject.SetActive(true);
+            p1Heart3.gameObject.SetActive(false);
+        }
         if (health == 1)
-            heart2.gameObject.SetActive(false);
-            heart3.gameObject.SetActive(false);
+        {
+            p1Heart1.gameObject.SetActive(true);
+            p1Heart2.gameObject.SetActive(false);
+            p1Heart3.gameObject.SetActive(false);
+        }
 
         if (health == 0)
-            heart1.gameObject.SetActive(false);
-            heart2.gameObject.SetActive(false);
-            heart3.gameObject.SetActive(false);
+        {
+            p1Heart1.gameObject.SetActive(false);
+            p1Heart2.gameObject.SetActive(false);
+            p1Heart3.gameObject.SetActive(false);
+        }
     }
 }
