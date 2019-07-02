@@ -28,7 +28,7 @@ public class PManager : MonoBehaviour
 
     public void Shoot()
     {                                 
-        float fireRate = .45f;
+        float fireRate = .25f;
 
         if (Time.time > nextFire)
         {

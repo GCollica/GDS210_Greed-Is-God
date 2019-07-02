@@ -5,14 +5,15 @@ using UnityEngine;
 public class PropItems : MonoBehaviour
 {
     public GameObject coins;
-    private int health = 3;
+    public GameObject coinsSpawnPoint;
+    private int health = 2;
 
     // Update is called once per frame
     void Update()
     {
         if(health <= 0)
         {
-            Instantiate(coins, transform.position, Quaternion.identity);
+            Instantiate(coins, coinsSpawnPoint.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
     }

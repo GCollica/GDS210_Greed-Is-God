@@ -6,64 +6,65 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     //keys 
-    public Text p1KeycountText;
-    private int p1KeycountValue;
+    public Text p1KeyCountText;
+    private int p1KeyCountValue;
 
     //gold
-    public Text p1GoldcountText;
-    private int p1GoldcountValue;
+    public Text p1GoldCountText;
+    private int p1GoldCountValue;
 
     //health
-    public static int Health;
-    public GameObject p1Heart1, p1Heart2, p1Heart3;
+    public static int healthStat;
+    public Image p1Heart1, p1Heart2, p1Heart3;
 
     public GameObject p1;
-    private PManager p1PManager;
+    public PManager p1PManager;
     
     // Start is called before the first frame update
     void Start()
     {
-        GameObject.Find("Player_1").GetComponent<PManager>().health = Health;
-        
+        //Health = GameObject.Find("Player_1").GetComponent<PManager>().health = 3;
+        healthStat = p1PManager.health;
     }
 
     // Update is called once per frame
     void Update()
     {
         //key
-        p1KeycountValue = p1PManager.keyCount;
-        p1KeycountText.text = "x " + p1KeycountValue.ToString();
+        p1KeyCountValue = p1PManager.keyCount ;
+        p1KeyCountText.text = "x " + p1KeyCountValue.ToString();
 
         //gold
-        p1GoldcountValue = p1PManager.goldCount;
-        p1GoldcountText.text = "$" + p1GoldcountValue.ToString();
+        p1GoldCountValue = p1PManager.goldCount;
+        p1GoldCountText.text = "$" + p1GoldCountValue.ToString();
 
-        //health limit
-        if (Health == 3)
+        //health loss
+        if (healthStat == 3)
         {
             p1Heart1.gameObject.SetActive(true);
             p1Heart2.gameObject.SetActive(true);
             p1Heart3.gameObject.SetActive(true);
         }
 
-        if (Health == 2)
+        if (healthStat == 2)
         {
             p1Heart1.gameObject.SetActive(true);
             p1Heart2.gameObject.SetActive(true);
             p1Heart3.gameObject.SetActive(false);
         }
-        if (Health == 1)
+        if (healthStat == 1)
         {
             p1Heart1.gameObject.SetActive(true);
             p1Heart2.gameObject.SetActive(false);
             p1Heart3.gameObject.SetActive(false);
         }
 
-        if (Health == 0)
+        if (healthStat == 0)
         {
             p1Heart1.gameObject.SetActive(false);
             p1Heart2.gameObject.SetActive(false);
             p1Heart3.gameObject.SetActive(false);
+            Debug.Log("P1 Dead");
         }
     }
 }

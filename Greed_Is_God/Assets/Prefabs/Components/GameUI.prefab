@@ -1779,12 +1779,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e16d229147d9c44bad3bc4eedd937fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p1KeycountText: {fileID: 9083917430670424491}
-  p1GoldcountText: {fileID: 9083917430001017555}
-  p1Heart1: {fileID: 9083917430026966088}
-  p1Heart2: {fileID: 9083917430598413892}
-  p1Heart3: {fileID: 9083917431582814723}
+  p1KeyCountText: {fileID: 9083917430670424491}
+  p1GoldCountText: {fileID: 9083917430001017555}
+  p1Heart1: {fileID: 9083917430026966090}
+  p1Heart2: {fileID: 9083917430598413894}
+  p1Heart3: {fileID: 9083917431582814725}
   p1: {fileID: 0}
+  p1PManager: {fileID: 0}
 --- !u!1 &9083917431277791952
 GameObject:
   m_ObjectHideFlags: 0
