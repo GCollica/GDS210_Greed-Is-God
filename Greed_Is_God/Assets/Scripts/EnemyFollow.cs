@@ -5,8 +5,6 @@ using UnityEngine;
 public class EnemyFollow : MonoBehaviour
 {
     public GameObject player;
-
-
     public float thrust;
     Rigidbody rb;
 

@@ -10,12 +10,11 @@ public class Spawners : MonoBehaviour
     private int spawnCount;
     private float spawnDelay = 1f;
     private float spawnTimer = 0f;
-    private RoomController roomControllerScript;
+    public RoomController roomControllerScript;
 
     // Start is called before the first frame update
     void Awake()
     {
-        roomControllerScript = GameObject.FindObjectOfType<RoomController>();
     }
 
     // Update is called once per frame
