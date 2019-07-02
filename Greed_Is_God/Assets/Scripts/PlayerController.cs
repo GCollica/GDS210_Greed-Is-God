@@ -39,8 +39,9 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         PlayerActivate();
-        OverrideRotation();
         //StoreScore();
+        OverrideRotation();
+
 
         //Stops the player from snapping back to 0 rotation
         if (Mathf.Abs(xVel) < 1 && Mathf.Abs(yVel) < 1)
@@ -84,24 +85,28 @@ public class PlayerController : MonoBehaviour
         if (player1 == true)
         {
             GetInputP1();
+            player1score = pManager.goldCount;
             return;
         }
 
         if (player2 == true)
         {
             GetInputP2();
+            player2score = pManager.goldCount;
             return;
         }
 
         if (player3 == true)
         {
             GetInputP2();
+            player1score = pManager.goldCount;
             return;
         }
 
         if (player4 == true)
         {
             GetInputP2();
+            player1score = pManager.goldCount;
             return;
         }
     }
@@ -202,26 +207,6 @@ public class PlayerController : MonoBehaviour
 
     void StoreScore()
     {
-        if (player1 == true)
-        {
-            player1score = pManager.goldCount;
-        }
-
-        if (player2 == true)
-        {
-            player2score = pManager.goldCount; ;
-        }
-
-        if (player3 == true)
-        {
-            player3score = pManager.goldCount; ;
-        }
-
-        if (player4 == true)
-        {
-            player4score = pManager.goldCount; ;
-        }
-
         scores.Add(player1score);
         scores.Add(player2score);
         scores.Add(player3score);
