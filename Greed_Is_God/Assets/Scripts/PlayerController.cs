@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     {
         PlayerActivate();
         OverrideRotation();
-        StoreScore();
+        //StoreScore();
 
         //Stops the player from snapping back to 0 rotation
         if (Mathf.Abs(xVel) < 1 && Mathf.Abs(yVel) < 1)
