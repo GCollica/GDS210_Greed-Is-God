@@ -12,19 +12,7 @@ public class PManager : MonoBehaviour
     public GameObject spawnPoint;
     public GameObject player;
 
-
     public float rightTrigger;
-
-
-    void Start()
-    {
-
-    }
-
-    void Update()
-    {
-
-    }
 
     public void Shoot()
     {                                 
