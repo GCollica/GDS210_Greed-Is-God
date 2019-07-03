@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     public bool player3;
     public bool player4;
 
+    private int score;
+
     public GreedGod greedGod;
     private PManager pManager;
 
@@ -36,6 +38,7 @@ public class PlayerController : MonoBehaviour
         //StoreScore();
         OverrideRotation();
 
+        score = pManager.goldCount;
 
         //Stops the player from snapping back to 0 rotation
         if (Mathf.Abs(xVel) < 1 && Mathf.Abs(yVel) < 1)
@@ -52,28 +55,24 @@ public class PlayerController : MonoBehaviour
         {
             player1 = true;
             print("Player 1 Connected");
-            return;
         }
 
         if (gameObject.name == "Player_2")
         {
             player2 = true;
             print("Player 2 Connected");
-            return;
         }
 
         if (gameObject.name == "Player_3")
         {
             player3 = true;
             print("Player 3 Connected");
-            return;
         }
 
         if (gameObject.name == "Player_4")
         {
             player4 = true;
             print("Player 4 Connected");
-            return;
         }
     }
 
@@ -83,29 +82,25 @@ public class PlayerController : MonoBehaviour
         if (player1 == true)
         {
             GetInputP1();
-            greedGod.player1score = pManager.goldCount;
-            return;
+            greedGod.player1score = score;
         }
 
         if (player2 == true)
         {
             GetInputP2();
-            greedGod.player2score = pManager.goldCount;
-            return;
+            greedGod.player2score = score;
         }
 
         if (player3 == true)
         {
             GetInputP3();
-            greedGod.player1score = pManager.goldCount;
-            return;
+            greedGod.player3score = score;
         }
 
         if (player4 == true)
         {
             GetInputP4();
-            greedGod.player1score = pManager.goldCount;
-            return;
+            greedGod.player4score = score;
         }
     }
 
