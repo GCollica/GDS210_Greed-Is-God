@@ -9,9 +9,27 @@ public class UIManager : MonoBehaviour
     public Text p1KeyCountText;
     private int p1KeyCountValue;
 
+    public Text p2KeyCountText;
+    private int p2KeyCountValue;
+
+    public Text p3KeyCountText;
+    private int p3KeyCountValue;
+
+    public Text p4KeyCountText;
+    private int p4KeyCountValue;
+    
     //gold
     public Text p1GoldCountText;
     private int p1GoldCountValue;
+
+    public Text p2GoldCountText;
+    private int p2GoldCountValue;
+
+    public Text p3GoldCountText;
+    private int p3GoldCountValue;
+
+    public Text p4GoldCountText;
+    private int p4GoldCountValue;
 
     //health
     public static int healthStat;
@@ -19,7 +37,16 @@ public class UIManager : MonoBehaviour
 
     public GameObject p1;
     public PManager p1PManager;
-    
+
+    public GameObject p2;
+    public PManager p2PManager;
+
+    public GameObject p3;
+    public PManager p3PManager;
+
+    public GameObject p4;
+    public PManager p4PManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +66,15 @@ public class UIManager : MonoBehaviour
         //gold
         p1GoldCountValue = p1PManager.goldCount;
         p1GoldCountText.text = "$" + p1GoldCountValue.ToString();
+
+        p2GoldCountValue = p2PManager.goldCount;
+        p2GoldCountText.text = "$" + p2GoldCountValue.ToString();
+
+        p3GoldCountValue = p3PManager.goldCount;
+        p3GoldCountText.text = "$" + p3GoldCountValue.ToString();
+
+        p4GoldCountValue = p4PManager.goldCount;
+        p4GoldCountText.text = "$" + p4GoldCountValue.ToString();
 
         //health loss
         if (healthStat == 3)
