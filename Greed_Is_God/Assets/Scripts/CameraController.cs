@@ -9,13 +9,13 @@ public class CameraController : MonoBehaviour
     public float moveSpeed = 5;
     public float smoothSpeed = 0.5f;
 
-    public PManager pManager;
+    public GreedGod greedGod;
 
     Vector3 targetPos;
 
     void Awake()
     {
-        pManager = gameObject.GetComponent<PManager>();
+        greedGod = gameObject.GetComponent<GreedGod>();
     }
 
     void Update()
