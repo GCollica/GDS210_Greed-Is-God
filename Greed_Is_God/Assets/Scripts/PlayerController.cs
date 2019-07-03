@@ -20,13 +20,7 @@ public class PlayerController : MonoBehaviour
     public bool player3;
     public bool player4;
 
-    public List<int> scores;
-    public int player1score;
-    public int player2score;
-    public int player3score;
-    public int player4score;
-    public int greedGod;
-
+    public GreedGod greedGod;
     private PManager pManager;
 
     void Awake()
@@ -58,24 +52,28 @@ public class PlayerController : MonoBehaviour
         {
             player1 = true;
             print("Player 1 Connected");
+            return;
         }
 
         if (gameObject.name == "Player_2")
         {
             player2 = true;
             print("Player 2 Connected");
+            return;
         }
 
         if (gameObject.name == "Player_3")
         {
             player3 = true;
             print("Player 3 Connected");
+            return;
         }
 
         if (gameObject.name == "Player_4")
         {
             player4 = true;
             print("Player 4 Connected");
+            return;
         }
     }
 
@@ -85,28 +83,28 @@ public class PlayerController : MonoBehaviour
         if (player1 == true)
         {
             GetInputP1();
-            player1score = pManager.goldCount;
+            greedGod.player1score = pManager.goldCount;
             return;
         }
 
         if (player2 == true)
         {
             GetInputP2();
-            player2score = pManager.goldCount;
+            greedGod.player2score = pManager.goldCount;
             return;
         }
 
         if (player3 == true)
         {
-            GetInputP2();
-            player1score = pManager.goldCount;
+            GetInputP3();
+            greedGod.player1score = pManager.goldCount;
             return;
         }
 
         if (player4 == true)
         {
-            GetInputP2();
-            player1score = pManager.goldCount;
+            GetInputP4();
+            greedGod.player1score = pManager.goldCount;
             return;
         }
     }
@@ -145,12 +143,12 @@ public class PlayerController : MonoBehaviour
     void GetInputP3()
     {
         //Left analogue sick movement
-        xVel = Input.GetAxis("LeftJoystickHorizontal_2") * moveSpeed;
-        yVel = Input.GetAxis("LeftJoystickVertical_2") * moveSpeed;
+        xVel = Input.GetAxis("LeftJoystickHorizontal_3") * moveSpeed;
+        yVel = Input.GetAxis("LeftJoystickVertical_3") * moveSpeed;
 
         //Right analogue sick movement
-        xRot = Input.GetAxisRaw("RightJoystickHorizontal_2");
-        yRot = Input.GetAxisRaw("RightJoystickVertical_2");
+        xRot = Input.GetAxisRaw("RightJoystickHorizontal_3");
+        yRot = Input.GetAxisRaw("RightJoystickVertical_3");
 
         if (xRot != 0 || yRot != 0)
             pManager.Shoot();
@@ -160,12 +158,12 @@ public class PlayerController : MonoBehaviour
     void GetInputP4()
     {
         //Left analogue sick movement
-        xVel = Input.GetAxis("LeftJoystickHorizontal_2") * moveSpeed;
-        yVel = Input.GetAxis("LeftJoystickVertical_2") * moveSpeed;
+        xVel = Input.GetAxis("LeftJoystickHorizontal_4") * moveSpeed;
+        yVel = Input.GetAxis("LeftJoystickVertical_4") * moveSpeed;
 
         //Right analogue sick movement
-        xRot = Input.GetAxisRaw("RightJoystickHorizontal_2");
-        yRot = Input.GetAxisRaw("RightJoystickVertical_2");
+        xRot = Input.GetAxisRaw("RightJoystickHorizontal_4");
+        yRot = Input.GetAxisRaw("RightJoystickVertical_4");
 
         if (xRot != 0 || yRot != 0)
             pManager.Shoot();
@@ -204,21 +202,4 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
-    void StoreScore()
-    {
-        scores.Add(player1score);
-        scores.Add(player2score);
-        scores.Add(player3score);
-        scores.Add(player4score);
-
-        scores.Sort();
-
-
-        for (int i = scores.Count; i-- > 0;)
-        {
-            greedGod = scores[1];
-            print(greedGod);
-        }
-    }
 }
