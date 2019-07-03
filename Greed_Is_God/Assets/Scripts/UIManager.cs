@@ -30,6 +30,8 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        healthStat = p1PManager.health;
+
         //key
         p1KeyCountValue = p1PManager.keyCount ;
         p1KeyCountText.text = "x " + p1KeyCountValue.ToString();
@@ -48,6 +50,7 @@ public class UIManager : MonoBehaviour
 
         if (healthStat == 2)
         {
+            Debug.Log("UI UPDATED");
             p1Heart1.gameObject.SetActive(true);
             p1Heart2.gameObject.SetActive(true);
             p1Heart3.gameObject.SetActive(false);
