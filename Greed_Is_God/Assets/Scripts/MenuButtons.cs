@@ -7,19 +7,9 @@ using UnityEngine;
 public class MenuButtons : MonoBehaviour
 {
 
-    public void PlayButton()
+    public void SceneButton(string myInput)
     {
-        SceneManager.LoadScene("Mac's_Alpha");
-    }
-
-    public void ControlsButton()
-    {
-        SceneManager.LoadScene("Controls");
-    }
-
-    public void MainMenuButton()
-    {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(myInput);
     }
 
     void Update()
