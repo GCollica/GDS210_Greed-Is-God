@@ -15,6 +15,7 @@ public class GreedGod : MonoBehaviour
     public int player4score;
 
     public int greedGodScore;
+    public GameObject currentGreedGod;
 
     private PlayerController pController;
     public CameraController cController;
@@ -38,6 +39,7 @@ public class GreedGod : MonoBehaviour
         {           
             cController.target = Player1.transform;
             greedGodScore = player1score;
+            currentGreedGod = Player1;
         }
 
         //For Player 2
@@ -45,6 +47,7 @@ public class GreedGod : MonoBehaviour
         {
             cController.target = Player2.transform;
             greedGodScore = player2score;
+            currentGreedGod = Player2;
         }
 
         //For Player 3
@@ -52,6 +55,7 @@ public class GreedGod : MonoBehaviour
         {
             cController.target = Player3.transform;
             greedGodScore = player3score;
+            currentGreedGod = Player3;
         }
 
         //For Player 4
@@ -59,6 +63,7 @@ public class GreedGod : MonoBehaviour
         {
             cController.target = Player4.transform;
             greedGodScore = player4score;
+            currentGreedGod = Player4;
         }
     }
 }
