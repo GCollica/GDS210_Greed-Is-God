@@ -12,7 +12,30 @@ public class PManager : MonoBehaviour
     public GameObject spawnPoint;
     public GameObject player;
 
+    private Vector3 playerSpawnPoint;
+
     public float rightTrigger;
+
+    private GreedGod greedGod;
+
+    void Update()
+    {
+        greedGod = FindObjectOfType<GreedGod>();
+        Dead();
+    }
+
+    void Dead()
+    {
+        if (health <= 0)
+            gameObject.SetActive(false);
+            Invoke("Spawn", 3);
+    }
+
+    void Spawn()
+    {
+        gameObject.SetActive(true);
+        this.transform.position = greedGod.currentGreedGod.transform.position;
+    }
 
     public void Shoot()
     {                                 
