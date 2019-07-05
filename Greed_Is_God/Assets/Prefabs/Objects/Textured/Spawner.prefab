@@ -98,12 +98,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65901c8b508a9845b9798ca77459354, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 8157090240872128680, guid: 9453191c247fd5240bce0a07bd70acf9, type: 3}
+  enemy: {fileID: 8637968093295491412, guid: eba5003e98e864848abcede6961cf4bc, type: 3}
   spawnPoints:
   - {fileID: 7743950926159476717}
   - {fileID: 7743950927394514206}
   - {fileID: 7743950926021474988}
   - {fileID: 7743950927583673012}
+  roomControllerScript: {fileID: 0}
 --- !u!65 &5115905760952781245
 BoxCollider:
   m_ObjectHideFlags: 0
