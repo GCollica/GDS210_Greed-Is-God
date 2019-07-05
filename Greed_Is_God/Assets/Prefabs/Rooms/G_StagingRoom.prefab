@@ -140,7 +140,7 @@ MonoBehaviour:
   - m_Indexes: 000000000100000002000000010000000300000002000000
     m_SmoothingGroup: 0
     m_Uv:
-      m_UseWorldSpace: 0
+      m_UseWorldSpace: 1
       m_FlipU: 0
       m_FlipV: 0
       m_SwapUV: 0
@@ -166,10 +166,10 @@ MonoBehaviour:
   - {x: 10.000001, y: 0, z: -0.16666754}
   - {x: 10.000001, y: 0, z: 9.999999}
   m_Textures0:
-  - {x: 0.00000020861626, y: -0.16666754}
-  - {x: 0.00000020861626, y: 9.999999}
-  - {x: 10.000001, y: -0.16666754}
-  - {x: 10.000001, y: 9.999999}
+  - {x: 0.00000062584877, y: -1.0000052}
+  - {x: 0.00000062584877, y: 59.999992}
+  - {x: 30.000004, y: -1.0000052}
+  - {x: 30.000004, y: 59.999992}
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
@@ -3118,11 +3118,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1276020062244867768}
     m_Modifications:
-    - target: {fileID: 3670532757222791928, guid: 966056d050c6e5f4fbed9368eae9b66a,
-        type: 3}
-      propertyPath: m_Name
-      value: Key
-      objectReference: {fileID: 0}
     - target: {fileID: 336366722571692267, guid: 966056d050c6e5f4fbed9368eae9b66a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3177,6 +3172,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3670532757222791928, guid: 966056d050c6e5f4fbed9368eae9b66a,
+        type: 3}
+      propertyPath: m_Name
+      value: Key
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 966056d050c6e5f4fbed9368eae9b66a, type: 3}
