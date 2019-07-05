@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7671492179638464007}
   m_Layer: 0
   m_Name: EnemyNew
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -101,11 +101,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: GhostEnemy
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 75ba190fc18b5964b8fa4fb8d5722724,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: e1bc4f691dc373848b5b96a9ce9b5c79, type: 2}
     - target: {fileID: -4216859302048453862, guid: 75ba190fc18b5964b8fa4fb8d5722724,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -161,6 +156,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 75ba190fc18b5964b8fa4fb8d5722724,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e1bc4f691dc373848b5b96a9ce9b5c79, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75ba190fc18b5964b8fa4fb8d5722724, type: 3}
 --- !u!4 &1729767658545610899 stripped

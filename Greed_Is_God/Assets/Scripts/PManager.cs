@@ -21,7 +21,10 @@ public class PManager : MonoBehaviour
     void Update()
     {
         greedGod = FindObjectOfType<GreedGod>();
-        Dead();
+        if(health <= 0)
+        {
+            Dead();
+        }
     }
 
     void Dead()
