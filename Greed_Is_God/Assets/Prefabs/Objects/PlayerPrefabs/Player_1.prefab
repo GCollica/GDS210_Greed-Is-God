@@ -100,6 +100,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  invulnerable: 0
+  deathDrop: {fileID: 5446994885961889613, guid: 853660d42ab24e24890fe5f43a8510c7,
+    type: 3}
   goldCount: 0
   keyCount: 2
   arrows: {fileID: 7800579452754074243, guid: 4155895a766ad084d943f0e75844cbf2, type: 3}
