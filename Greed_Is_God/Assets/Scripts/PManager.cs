@@ -31,7 +31,7 @@ public class PManager : MonoBehaviour
     {
         if(health <= 0)
         {
-            Dead();
+            //Dead();
         }
     }
 
