@@ -2684,6 +2684,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9157410571638341639}
     m_Modifications:
+    - target: {fileID: 8842509372413565593, guid: c1c1ab3647acfd1439071bcace699285,
+        type: 3}
+      propertyPath: m_Name
+      value: Crate_Textured
+      objectReference: {fileID: 0}
     - target: {fileID: 5543296398248847498, guid: c1c1ab3647acfd1439071bcace699285,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2739,11 +2744,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8842509372413565593, guid: c1c1ab3647acfd1439071bcace699285,
-        type: 3}
-      propertyPath: m_Name
-      value: Crate_Textured
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c1ab3647acfd1439071bcace699285, type: 3}
 --- !u!4 &5187576036257834168 stripped
@@ -2759,6 +2759,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 366553738147787067}
     m_Modifications:
+    - target: {fileID: 1754687795991705551, guid: 241ad98aa47521f49b45ea1eddc0dcbf,
+        type: 3}
+      propertyPath: m_Name
+      value: Spawner (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 3315421836218107356, guid: 241ad98aa47521f49b45ea1eddc0dcbf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2814,11 +2819,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1754687795991705551, guid: 241ad98aa47521f49b45ea1eddc0dcbf,
-        type: 3}
-      propertyPath: m_Name
-      value: Spawner (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7743950926393847489, guid: 241ad98aa47521f49b45ea1eddc0dcbf,
         type: 3}
       propertyPath: roomControllerScript
@@ -2839,6 +2839,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 366553738147787067}
     m_Modifications:
+    - target: {fileID: 1754687795991705551, guid: 241ad98aa47521f49b45ea1eddc0dcbf,
+        type: 3}
+      propertyPath: m_Name
+      value: Spawner (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 3315421836218107356, guid: 241ad98aa47521f49b45ea1eddc0dcbf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2893,11 +2898,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1754687795991705551, guid: 241ad98aa47521f49b45ea1eddc0dcbf,
-        type: 3}
-      propertyPath: m_Name
-      value: Spawner (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7743950926393847489, guid: 241ad98aa47521f49b45ea1eddc0dcbf,
         type: 3}
@@ -3219,6 +3219,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 366553738147787067}
     m_Modifications:
+    - target: {fileID: 1754687795991705551, guid: 241ad98aa47521f49b45ea1eddc0dcbf,
+        type: 3}
+      propertyPath: m_Name
+      value: Spawner (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 3315421836218107356, guid: 241ad98aa47521f49b45ea1eddc0dcbf,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3273,11 +3278,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1754687795991705551, guid: 241ad98aa47521f49b45ea1eddc0dcbf,
-        type: 3}
-      propertyPath: m_Name
-      value: Spawner (3)
       objectReference: {fileID: 0}
     - target: {fileID: 7743950926393847489, guid: 241ad98aa47521f49b45ea1eddc0dcbf,
         type: 3}
@@ -3674,6 +3674,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 3286933168276257727}
     m_Modifications:
+    - target: {fileID: 8842509372413565593, guid: c1c1ab3647acfd1439071bcace699285,
+        type: 3}
+      propertyPath: m_Name
+      value: Crate_Textured
+      objectReference: {fileID: 0}
     - target: {fileID: 5543296398248847498, guid: c1c1ab3647acfd1439071bcace699285,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3728,11 +3733,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8842509372413565593, guid: c1c1ab3647acfd1439071bcace699285,
-        type: 3}
-      propertyPath: m_Name
-      value: Crate_Textured
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c1ab3647acfd1439071bcace699285, type: 3}
