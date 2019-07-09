@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyFollow : MonoBehaviour
 {
     public GameObject player;
-    private int thrust = 25;
+    private int thrust = 20;
     Rigidbody rb;
     GreedGod greedGodScript;
 
@@ -15,14 +15,20 @@ public class EnemyFollow : MonoBehaviour
         greedGodScript = FindObjectOfType<GreedGod>();       
     }
 
-    void Update()
+    void FixedUpdate()
+    {
+        LookAtTarget();
+        MoveForward();
+    }
+
+    private void MoveForward()
+    {
+        rb.AddForce(transform.forward * thrust, ForceMode.Acceleration);
+    }
+
+    private void LookAtTarget()
     {
         player = greedGodScript.currentGreedGod;
         transform.LookAt(player.transform);
-    }
-
-    private void LateUpdate()
-    {
-        rb.AddForce(transform.forward * thrust);
     }
 }
