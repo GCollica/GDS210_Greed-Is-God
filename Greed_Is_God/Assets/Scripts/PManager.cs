@@ -127,6 +127,10 @@ public class PManager : MonoBehaviour
             Destroy(other.gameObject);
             FindObjectOfType<AudioManager>().Play("DoorDeath");
         }
+        if (other.gameObject.CompareTag("Bounds"))
+        {
+            this.gameObject.transform.position = greedGod.currentGreedGod.transform.position;
+        }
     }
 
 
