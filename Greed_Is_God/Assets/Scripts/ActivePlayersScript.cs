@@ -4,14 +4,21 @@ using UnityEngine;
 
 public class ActivePlayersScript : MonoBehaviour
 {
-    ActivePlayerRoster APRScript;
-        
-    GameObject Player1, Player2, Player3, Player4;
+    public GameObject Player1, Player2, Player3, Player4;
 
-    public bool onePlayer;
-    public bool twoPlayers;
-    public bool threePlayers;
-    public bool fourPlayers;
+    public bool onePlayer = false;
+    public bool twoPlayers = false;
+    public bool threePlayers = false;
+    public bool fourPlayers = false;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        //Player1.SetActive(false);
+        //Player2.SetActive(false);
+        //Player3.SetActive(false);
+        //Player4.SetActive(false);
+    }
 
     void Update()
     {
@@ -30,7 +37,6 @@ public class ActivePlayersScript : MonoBehaviour
             Player2.SetActive(true);
             Player3.SetActive(false);
             Player4.SetActive(false);
-            Debug.Log("p1,2 active");
         }
 
         if (threePlayers == true)
@@ -39,7 +45,6 @@ public class ActivePlayersScript : MonoBehaviour
             Player2.SetActive(true);
             Player3.SetActive(true);
             Player4.SetActive(false);
-            Debug.Log("p1,2,3 active");
         }
 
         if (fourPlayers == true)
@@ -48,7 +53,6 @@ public class ActivePlayersScript : MonoBehaviour
             Player2.SetActive(true);
             Player3.SetActive(true);
             Player4.SetActive(true);
-            Debug.Log("p1,2,3,4 active");
         }
     }
 }

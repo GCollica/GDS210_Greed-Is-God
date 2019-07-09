@@ -9,10 +9,6 @@ public class ActivePlayerButtonScript : MonoBehaviour
     //public GameObject ActivePlayerManager;
     public ActivePlayersScript APScript;
 
-    private void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
 
     public void onePlayer()
     {
@@ -21,7 +17,6 @@ public class ActivePlayerButtonScript : MonoBehaviour
         {
             Debug.Log("1Changing");
             APScript.onePlayer = true;
-            SceneManager.LoadScene("LevelSelect");
         }
     }
 
@@ -32,7 +27,6 @@ public class ActivePlayerButtonScript : MonoBehaviour
         {
             Debug.Log("2Changing");
             APScript.twoPlayers = true;
-            SceneManager.LoadScene("LevelSelect");
         }
     }
 
@@ -43,7 +37,6 @@ public class ActivePlayerButtonScript : MonoBehaviour
         {
             Debug.Log("3Changing");
             APScript.threePlayers = true;
-            SceneManager.LoadScene("LevelSelect");
         }
     }
 
@@ -54,8 +47,6 @@ public class ActivePlayerButtonScript : MonoBehaviour
         {
             Debug.Log("4Changing");
             APScript.fourPlayers = true;
-            SceneManager.LoadScene("LevelSelect");
         }
     }
-
 }
