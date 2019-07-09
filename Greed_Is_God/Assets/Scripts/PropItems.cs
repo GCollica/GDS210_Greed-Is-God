@@ -15,6 +15,7 @@ public class PropItems : MonoBehaviour
         {
             Instantiate(coins, coinsSpawnPoint.transform.position, Quaternion.identity);
             Destroy(this.gameObject);
+            FindObjectOfType<AudioManager>().Play("PropDeath");
         }
     }
 
@@ -23,6 +24,7 @@ public class PropItems : MonoBehaviour
         if (collision.gameObject.CompareTag("Projectile"))
         {
             health--;
+            FindObjectOfType<AudioManager>().Play("PropHit");
         }
     }
 }

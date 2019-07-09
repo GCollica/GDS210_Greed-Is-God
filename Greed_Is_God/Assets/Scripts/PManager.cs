@@ -93,6 +93,7 @@ public class PManager : MonoBehaviour
         {
             goldCount += 10;
             Destroy(other.gameObject);
+            FindObjectOfType<AudioManager>().Play("CoinPickup");
         }
         if (other.gameObject.CompareTag("DeathDrop"))
         {
@@ -103,11 +104,13 @@ public class PManager : MonoBehaviour
         {
             keyCount++;
             Destroy(other.gameObject);
+            FindObjectOfType<AudioManager>().Play("KeyPickup");
         }
         if (other.gameObject.CompareTag("Door") && keyCount >= 1)
         {
             keyCount--;
             Destroy(other.gameObject);
+            FindObjectOfType<AudioManager>().Play("DoorDeath");
         }
     }
 

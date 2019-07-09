@@ -11,6 +11,7 @@ public class EnemyHealth : MonoBehaviour
         if(health <= 0)
         {
             Destroy(this.gameObject);
+            FindObjectOfType<AudioManager>().Play("EnemyDeath");
         }
     }
 
@@ -19,6 +20,7 @@ public class EnemyHealth : MonoBehaviour
         if (collision.gameObject.CompareTag("Projectile"))
         {
             health--;
+            FindObjectOfType<AudioManager>().Play("EnemyHit");
         }
     }
 }

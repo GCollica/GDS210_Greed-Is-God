@@ -21,6 +21,7 @@ public class Projectile : MonoBehaviour
     void MoveForward()
     {
         projectileRb.velocity = transform.forward * thrust;
+        FindObjectOfType<AudioManager>().Play("Shooting");
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -28,8 +29,10 @@ public class Projectile : MonoBehaviour
         if (collision.gameObject.CompareTag("Food"))
         {
             Destroy(collision.gameObject);
+            FindObjectOfType<AudioManager>().Play("FoodDeath");
         }
 
         Destroy(this.gameObject);
+
     }
 }
