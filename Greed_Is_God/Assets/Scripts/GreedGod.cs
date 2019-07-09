@@ -42,6 +42,7 @@ public class GreedGod : MonoBehaviour
         //For Player 1
         if(player1score > greedGodScore)
         {           
+            cController.target = Player1.transform;
             greedGodScore = player1score;
             currentGreedGod = Player1;
         }
@@ -49,6 +50,7 @@ public class GreedGod : MonoBehaviour
         //For Player 2
         if (player2score > greedGodScore)
         {
+            cController.target = Player2.transform;
             greedGodScore = player2score;
             currentGreedGod = Player2;
         }
@@ -56,6 +58,7 @@ public class GreedGod : MonoBehaviour
         //For Player 3
         if (player3score > greedGodScore)
         {
+            cController.target = Player3.transform;
             greedGodScore = player3score;
             currentGreedGod = Player3;
         }
@@ -63,6 +66,7 @@ public class GreedGod : MonoBehaviour
         //For Player 4
         if (player4score > greedGodScore)
         {
+            cController.target = Player4.transform;
             greedGodScore = player4score;
             currentGreedGod = Player4;
         }
