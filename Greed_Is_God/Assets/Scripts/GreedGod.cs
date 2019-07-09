@@ -20,6 +20,11 @@ public class GreedGod : MonoBehaviour
     private PlayerController pController;
     public CameraController cController;
 
+    private void Awake()
+    {
+        currentGreedGod = Player1;
+    }
+
     void Start()
     {
         greedGodScore = 0;

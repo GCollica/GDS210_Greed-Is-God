@@ -5,19 +5,19 @@ using UnityEngine;
 public class EnemyFollow : MonoBehaviour
 {
     public GameObject player;
-    public int thrust;
+    private int thrust = 25;
     Rigidbody rb;
     GreedGod greedGodScript;
 
     void Awake()
     {
         rb = this.gameObject.GetComponent<Rigidbody>();
-        greedGodScript = FindObjectOfType<GreedGod>();
-        player = greedGodScript.currentGreedGod.gameObject;
+        greedGodScript = FindObjectOfType<GreedGod>();       
     }
 
     void Update()
     {
+        player = greedGodScript.currentGreedGod;
         transform.LookAt(player.transform);
     }
 
