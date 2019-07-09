@@ -24,12 +24,41 @@ public class ActivePlayersScript : MonoBehaviour
         threePlayers = false;
         fourPlayers = false;
 
+        
+    }
+
+    void Update()
+    {
         if(onePlayer == true)
         {
             Player1.SetActive(true);
+            Player2.SetActive(false);
+            Player3.SetActive(false);
+            Player4.SetActive(false);
         }
 
+        if (twoPlayers == true)
+        {
+            Player1.SetActive(true);
+            Player2.SetActive(true);
+            Player3.SetActive(false);
+            Player4.SetActive(false);
+        }
 
+        if (threePlayers == true)
+        {
+            Player1.SetActive(true);
+            Player2.SetActive(true);
+            Player3.SetActive(true);
+            Player4.SetActive(false);
+        }
 
+        if (fourPlayers == true)
+        {
+            Player1.SetActive(true);
+            Player2.SetActive(true);
+            Player3.SetActive(true);
+            Player4.SetActive(true);
+        }
     }
 }
