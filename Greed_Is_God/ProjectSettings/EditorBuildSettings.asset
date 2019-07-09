@@ -6,36 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menus/StartScene.unity
-    guid: c60c3bbe5d3874b4f973f6eaccc9d8c0
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    path: Assets/Scenes/Menus/MainMenu.unity
+    guid: 7e112e1422ffec640a8990773e8e51aa
+  - enabled: 1
+    path: Assets/Scenes/Controls.unity
+    guid: a778bc3d905ce5249ad57d83f8cbd139
   - enabled: 1
     path: Assets/Scenes/Menus/Players.unity
     guid: aa10f888b123cbc499660370fac4cfcc
   - enabled: 1
-    path: Assets/Scenes/Menus/LevelSelect.unity
-    guid: dc25e5a397d7e5a4c8441aef44b1adcc
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
     path: Assets/Scenes/Levels/Level_One.unity
     guid: 40e45901dfe716849bbfc1145b1f7af1
-  - enabled: 1
-    path: Assets/Scenes/Controls.unity
-    guid: a778bc3d905ce5249ad57d83f8cbd139
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/Liv's_Alpha.unity
-    guid: 1a2ffd40f7b7ff8488f163a4b520f005
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   m_configObjects: {}
