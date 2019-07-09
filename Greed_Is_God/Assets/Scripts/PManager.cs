@@ -5,9 +5,7 @@ using UnityEngine;
 public class PManager : MonoBehaviour
 {
     public int health = 3;
-    public bool invulnerable;
-    public GameObject deathDrop;
-    private DeathDropValue deathDV;
+    public bool invulnerable = false;
 
     public int goldCount;
     public int keyCount;
@@ -36,7 +34,7 @@ public class PManager : MonoBehaviour
     {
         if (health <= 0)
         {
-            //Dead();
+            Dead();
         }
 
         //if (greedGod.greedGodScore == goldCount)
@@ -59,16 +57,18 @@ public class PManager : MonoBehaviour
     {
             gameObject.SetActive(false);
             goldCount = goldCount / 2;
-            deathDV.deathDropValue = goldCount;
-            Instantiate(deathDrop, player.transform.position, Quaternion.identity);
             Invoke("Spawn", 3);
     }
 
     void Spawn()
     {
-        gameObject.SetActive(true);
-        player.transform.position = greedGod.currentGreedGod.transform.position;
+        this.health = 3;
         invulnerable = true;
+        gameObject.SetActive(true);        
+        if(player.transform.position != greedGod.currentGreedGod.transform.position)
+        {
+            player.transform.position = greedGod.currentGreedGod.transform.position;
+        }
         Invoke("Invulnerability", 5);
     }
 
@@ -114,11 +114,6 @@ public class PManager : MonoBehaviour
             goldCount += 10;
             Destroy(other.gameObject);
             FindObjectOfType<AudioManager>().Play("CoinPickup");
-        }
-        if (other.gameObject.CompareTag("DeathDrop"))
-        {
-            goldCount += deathDV.deathDropValue;
-            Destroy(other.gameObject);
         }
         if (other.gameObject.CompareTag("Key"))
         {
