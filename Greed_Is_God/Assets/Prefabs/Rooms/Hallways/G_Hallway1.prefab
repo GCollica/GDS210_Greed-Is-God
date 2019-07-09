@@ -1315,20 +1315,20 @@ MonoBehaviour:
   m_Positions:
   - {x: -37.5, y: 0, z: 10}
   - {x: -37.5, y: 0.0001, z: -10}
-  - {x: 37, y: 0.0001, z: 10}
-  - {x: 37, y: 0.0002, z: -10}
+  - {x: 37.5, y: 0.0001, z: 10}
+  - {x: 37.5, y: 0.0002, z: -10}
   m_Textures0:
   - {x: -37.5, y: 10}
   - {x: -37.5, y: -10}
-  - {x: 37, y: 10}
-  - {x: 37, y: -10}
+  - {x: 37.5, y: 10}
+  - {x: 37.5, y: -10}
   m_Textures2: []
   m_Textures3: []
   m_Tangents:
-  - {x: 1, y: 0.0000013422817, z: -5.684342e-19, w: -1}
-  - {x: 1, y: 0.0000013422817, z: -5.684342e-19, w: -1}
-  - {x: 1, y: 0.0000013422817, z: -5.684342e-19, w: -1}
-  - {x: 1, y: 0.0000013422817, z: -5.684342e-19, w: -1}
+  - {x: 1, y: 0.0000013333332, z: -5.684342e-19, w: -1}
+  - {x: 1, y: 0.0000013333332, z: -5.684342e-19, w: -1}
+  - {x: 1, y: 0.0000013333332, z: -5.684342e-19, w: -1}
+  - {x: 1, y: 0.0000013333332, z: -5.684342e-19, w: -1}
   m_Colors: []
   m_UnwrapParameters:
     m_HardAngle: 88
@@ -1339,8 +1339,10 @@ MonoBehaviour:
   assetGuid: 
   m_IsSelectable: 1
   m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedEdges:
+  - a: 2
+    b: 3
+  m_SelectedVertices: 0200000003000000
 --- !u!64 &7892487931954395960
 MeshCollider:
   m_ObjectHideFlags: 0
