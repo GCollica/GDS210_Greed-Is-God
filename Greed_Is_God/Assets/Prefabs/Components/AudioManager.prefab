@@ -46,55 +46,55 @@ MonoBehaviour:
   sounds:
   - name: Theme
     clip: {fileID: 8300000, guid: 3b4647b78f273234e876a33561bed8e0, type: 3}
-    volume: 1
+    volume: 0.191
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: EnemyDeath
     clip: {fileID: 8300000, guid: 283c9344dcf53714bb6fb1e14a8b2009, type: 3}
-    volume: 1
+    volume: 0.2
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   - name: FoodDeath
     clip: {fileID: 8300000, guid: 0257e3b2ee6e60d4fb833dc401491bc2, type: 3}
     volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   - name: Shooting
     clip: {fileID: 8300000, guid: 342069e10a721504a9900e303cc4e761, type: 3}
     volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   - name: EnemyHit
     clip: {fileID: 8300000, guid: c64d16c777e3a6f4289c62eded5a4533, type: 3}
-    volume: 1
+    volume: 0.2
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   - name: CoinPickup
     clip: {fileID: 8300000, guid: 7f9403ad262715f4994f66bc8d445f42, type: 3}
     volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   - name: PropHit
     clip: {fileID: 8300000, guid: 2dbc30f4a48c9e044a000e1f4042c5a2, type: 3}
     volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   - name: DoorDeath
     clip: {fileID: 8300000, guid: edae8a199c1540e4ab11086d1d18915d, type: 3}
     volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
   - name: KeyPickup
     clip: {fileID: 8300000, guid: 158976f480ab14045b5a6448d14ce24c, type: 3}
     volume: 1
     pitch: 1
-    loop: 1
+    loop: 0
     source: {fileID: 0}
