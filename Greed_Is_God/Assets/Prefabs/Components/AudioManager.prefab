@@ -46,7 +46,7 @@ MonoBehaviour:
   sounds:
   - name: Theme
     clip: {fileID: 8300000, guid: 3b4647b78f273234e876a33561bed8e0, type: 3}
-    volume: 0.191
+    volume: 0.2
     pitch: 1
     loop: 1
     source: {fileID: 0}
@@ -82,7 +82,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: PropHit
     clip: {fileID: 8300000, guid: 2dbc30f4a48c9e044a000e1f4042c5a2, type: 3}
-    volume: 1
+    volume: 0.2
     pitch: 1
     loop: 0
     source: {fileID: 0}
