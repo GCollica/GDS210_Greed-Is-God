@@ -14,10 +14,7 @@ public class ActivePlayersScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Player1.SetActive(false);
-        //Player2.SetActive(false);
-        //Player3.SetActive(false);
-        //Player4.SetActive(false);
+
     }
 
     void Update()
@@ -37,6 +34,7 @@ public class ActivePlayersScript : MonoBehaviour
             Player2.SetActive(true);
             Player3.SetActive(false);
             Player4.SetActive(false);
+            Debug.Log("p1-2 active");
         }
 
         if (threePlayers == true)
@@ -45,6 +43,7 @@ public class ActivePlayersScript : MonoBehaviour
             Player2.SetActive(true);
             Player3.SetActive(true);
             Player4.SetActive(false);
+            Debug.Log("p1-3 active");
         }
 
         if (fourPlayers == true)
@@ -53,6 +52,8 @@ public class ActivePlayersScript : MonoBehaviour
             Player2.SetActive(true);
             Player3.SetActive(true);
             Player4.SetActive(true);
+            Debug.Log("p1-4 active");
         }
+        DontDestroyOnLoad(this.gameObject);
     }
 }
