@@ -110,6 +110,8 @@ MonoBehaviour:
   spawnPoint: {fileID: 1942702237886227064}
   player: {fileID: 1942702236752684967}
   rightTrigger: 0
+  crown: {fileID: 0}
+  isGreedGod: 0
 --- !u!1 &1942702237886227064
 GameObject:
   m_ObjectHideFlags: 0
