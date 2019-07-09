@@ -2823,7 +2823,7 @@ GameObject:
   - component: {fileID: 7042440026152995425}
   - component: {fileID: 3261745322515604669}
   - component: {fileID: 6917187862515995818}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4791,6 +4791,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8643716657066717720}
     m_Modifications:
+    - target: {fileID: 1540542667216549265, guid: 464f0bff6ad78d74fb18b27f35367d94,
+        type: 3}
+      propertyPath: m_Name
+      value: Gate_Textured
+      objectReference: {fileID: 0}
     - target: {fileID: 2538414715857569666, guid: 464f0bff6ad78d74fb18b27f35367d94,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4845,11 +4850,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1540542667216549265, guid: 464f0bff6ad78d74fb18b27f35367d94,
-        type: 3}
-      propertyPath: m_Name
-      value: Gate_Textured
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 464f0bff6ad78d74fb18b27f35367d94, type: 3}

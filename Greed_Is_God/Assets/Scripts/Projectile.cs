@@ -5,11 +5,11 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     Rigidbody projectileRb;
-    private int thrust = 20;
+    private int thrust = 25;
 
     void Awake()
     {
-        projectileRb = GetComponent<Rigidbody>();
+        projectileRb = this.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class Projectile : MonoBehaviour
     void MoveForward()
     {
         projectileRb.velocity = transform.forward * thrust;
-        FindObjectOfType<AudioManager>().Play("Shooting");
+        //FindObjectOfType<AudioManager>().Play("Shooting");
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -32,6 +32,7 @@ public class Projectile : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("FoodDeath");
         }
 
+        Debug.Log(collision.gameObject.name);
         Destroy(this.gameObject);
 
     }
