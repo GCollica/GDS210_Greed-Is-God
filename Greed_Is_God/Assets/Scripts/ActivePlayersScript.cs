@@ -14,22 +14,20 @@ public class ActivePlayersScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Player1.SetActive(false);
-        Player2.SetActive(false);
-        Player3.SetActive(false);
-        Player4.SetActive(false);
-
-        onePlayer = false;
-        twoPlayers = false;
-        threePlayers = false;
-        fourPlayers = false;
-
-        
+        //Player1.SetActive(false);
+        //Player2.SetActive(false);
+        //Player3.SetActive(false);
+        //Player4.SetActive(false);      
     }
 
     void Update()
     {
-        if(onePlayer == true)
+        //onePlayer = false;
+        //twoPlayers = false;
+        //threePlayers = false;
+        //fourPlayers = false;
+
+        if (onePlayer == true)
         {
             Player1.SetActive(true);
             Player2.SetActive(false);
