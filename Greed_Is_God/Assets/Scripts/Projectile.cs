@@ -32,7 +32,6 @@ public class Projectile : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("FoodDeath");
         }
 
-        Debug.Log(collision.gameObject.name);
         Destroy(this.gameObject);
 
     }
