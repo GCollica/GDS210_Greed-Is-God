@@ -416,9 +416,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: SceneButton
-        m_Mode: 5
+      - m_Target: {fileID: 92588001}
+        m_MethodName: fourPlayers
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -705,7 +705,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 559026065}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 92588001}
+        m_MethodName: threePlayers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &559026065
@@ -905,7 +916,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1184333184}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 92588001}
+        m_MethodName: twoPlayers
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1184333184
@@ -964,7 +986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1369174504
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1632,6 +1654,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Active Player Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 3374654534933074605, guid: 2095ca83f46ffae4ca0b2ae33726a8c7,
+        type: 3}
+      propertyPath: Player1
+      value: 
+      objectReference: {fileID: 1942702236752684967, guid: ca3e07a09e8f01b48a29bc800fe17a57,
+        type: 3}
+    - target: {fileID: 3374654534933074605, guid: 2095ca83f46ffae4ca0b2ae33726a8c7,
+        type: 3}
+      propertyPath: Player2
+      value: 
+      objectReference: {fileID: 479446556505463680, guid: d237f62bfe3d2114b82ccf47d76a291f,
+        type: 3}
+    - target: {fileID: 3374654534933074605, guid: 2095ca83f46ffae4ca0b2ae33726a8c7,
+        type: 3}
+      propertyPath: Player3
+      value: 
+      objectReference: {fileID: 2744871216446336438, guid: 3e81e832df767984986b093a8ebf1895,
+        type: 3}
+    - target: {fileID: 3374654534933074605, guid: 2095ca83f46ffae4ca0b2ae33726a8c7,
+        type: 3}
+      propertyPath: Player4
+      value: 
+      objectReference: {fileID: 4441978072335166547, guid: ad526d85d757c31439c66f69ef0c881b,
+        type: 3}
     - target: {fileID: 3374654534933074606, guid: 2095ca83f46ffae4ca0b2ae33726a8c7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1687,29 +1733,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3374654534933074605, guid: 2095ca83f46ffae4ca0b2ae33726a8c7,
-        type: 3}
-      propertyPath: Player1
-      value: 
-      objectReference: {fileID: 1942702236752684967, guid: ca3e07a09e8f01b48a29bc800fe17a57,
-        type: 3}
-    - target: {fileID: 3374654534933074605, guid: 2095ca83f46ffae4ca0b2ae33726a8c7,
-        type: 3}
-      propertyPath: Player2
-      value: 
-      objectReference: {fileID: 479446556505463680, guid: d237f62bfe3d2114b82ccf47d76a291f,
-        type: 3}
-    - target: {fileID: 3374654534933074605, guid: 2095ca83f46ffae4ca0b2ae33726a8c7,
-        type: 3}
-      propertyPath: Player3
-      value: 
-      objectReference: {fileID: 2744871216446336438, guid: 3e81e832df767984986b093a8ebf1895,
-        type: 3}
-    - target: {fileID: 3374654534933074605, guid: 2095ca83f46ffae4ca0b2ae33726a8c7,
-        type: 3}
-      propertyPath: Player4
-      value: 
-      objectReference: {fileID: 4441978072335166547, guid: ad526d85d757c31439c66f69ef0c881b,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2095ca83f46ffae4ca0b2ae33726a8c7, type: 3}
