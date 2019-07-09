@@ -8,7 +8,7 @@ public class Spawners : MonoBehaviour
     public GameObject enemy;
     public GameObject [] spawnPoints;
     private int spawnCount;
-    private float spawnDelay = 2f;
+    private float spawnDelay = 3f;
     private float spawnTimer = 0f;
     public RoomController roomControllerScript;
 
