@@ -106,7 +106,7 @@ MonoBehaviour:
     type: 3}
   goldCount: 0
   keyCount: 2
-  arrows: {fileID: 7800579452754074243, guid: 4155895a766ad084d943f0e75844cbf2, type: 3}
+  arrows: {fileID: 5941164243023837795, guid: d7a9ebc962b5f554a92a7b2be761e4ce, type: 3}
   spawnPoint: {fileID: 1942702237886227064}
   player: {fileID: 1942702236752684967}
   rightTrigger: 0
@@ -242,11 +242,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 3bf6ec5d04c0878479ce96f21039b29d,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: d13047cca854fc847915a8b6e5decb5b, type: 2}
     - target: {fileID: -4216859302048453862, guid: 3bf6ec5d04c0878479ce96f21039b29d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -317,6 +312,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.809
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 3bf6ec5d04c0878479ce96f21039b29d,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d13047cca854fc847915a8b6e5decb5b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bf6ec5d04c0878479ce96f21039b29d, type: 3}
 --- !u!4 &2611752749680398909 stripped
