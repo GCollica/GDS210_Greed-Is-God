@@ -22,17 +22,37 @@ public class PManager : MonoBehaviour
 
     private GreedGod greedGod;
 
+    public GameObject crown;
+    public bool isGreedGod = false;
+
+
     private void Awake()
     {
         greedGod = FindObjectOfType<GreedGod>();
+        
     }
 
     void Update()
     {
-        if(health <= 0)
+        if (health <= 0)
         {
             //Dead();
         }
+
+        //if (greedGod.greedGodScore == goldCount)
+        //{
+        //    isGreedGod = true;
+        //}
+
+        //if (isGreedGod == true)
+        //{
+        //    crown.SetActive(true);
+        //}
+
+        //if (isGreedGod == false)
+        //{
+        //    crown.SetActive(false);           
+        //}
     }
 
     void Dead()

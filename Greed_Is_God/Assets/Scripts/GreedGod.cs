@@ -20,6 +20,11 @@ public class GreedGod : MonoBehaviour
     private PlayerController pController;
     public CameraController cController;
 
+    public GameObject playerOneCrown;
+    public GameObject playerTwoCrown;
+    public GameObject playerThreeCrown;
+    public GameObject playerFourCrown;
+
     private void Awake()
     {
         currentGreedGod = Player1;
@@ -33,6 +38,42 @@ public class GreedGod : MonoBehaviour
     void Update()
     {
         DetermineGreedGod();
+
+        if (currentGreedGod.gameObject.name == "Player_1")
+        {
+            playerOneCrown.SetActive(true);
+            playerTwoCrown.SetActive(false);
+            playerThreeCrown.SetActive(false);
+            playerFourCrown.SetActive(false);
+            Debug.Log("1 is Greed");
+        }
+
+        if (currentGreedGod.gameObject.name == "Player_2")
+        {
+            playerOneCrown.SetActive(false);
+            playerTwoCrown.SetActive(true);
+            playerThreeCrown.SetActive(false);
+            playerFourCrown.SetActive(false);
+            Debug.Log("2 is Greed");
+        }
+
+        if (currentGreedGod.gameObject.name == "Player_3")
+        {
+            playerOneCrown.SetActive(false);
+            playerTwoCrown.SetActive(false);
+            playerThreeCrown.SetActive(true);
+            playerFourCrown.SetActive(false);
+            Debug.Log("3 is Greed");
+        }
+
+        if (currentGreedGod.gameObject.name == "Player_4")
+        {
+            playerOneCrown.SetActive(false);
+            playerTwoCrown.SetActive(false);
+            playerThreeCrown.SetActive(false);
+            playerFourCrown.SetActive(true);
+            Debug.Log("4 is Greed");
+        }
     }
 
     //Checks if each players score is higher than the current required score to be the Greed God. 
