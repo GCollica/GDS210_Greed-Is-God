@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menus/StartScene.unity
     guid: c60c3bbe5d3874b4f973f6eaccc9d8c0
-  - enabled: 1
-    path: Assets/Scenes/Menus/MainMenu.unity
-    guid: e7696afebf9eed547aa94509e76aee3b
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Menus/Players.unity
     guid: aa10f888b123cbc499660370fac4cfcc
@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/LevelOne.unity
     guid: 7977eaab2e51b314585b8f351738f9df
+  - enabled: 1
+    path: Assets/Scenes/Levels/LevelTwo.unity
+    guid: 40e45901dfe716849bbfc1145b1f7af1
   - enabled: 1
     path: Assets/Scenes/Controls.unity
     guid: a778bc3d905ce5249ad57d83f8cbd139
@@ -32,7 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Liv's_Alpha.unity
     guid: 1a2ffd40f7b7ff8488f163a4b520f005
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Daragh's_Alpha.unity
     guid: 4b29e3a3961f28c43b81f2bab4b0ac6f
   m_configObjects: {}

@@ -6,11 +6,9 @@ public class WinBox : MonoBehaviour
 {
     public bool Win = false;
     public GameObject WinScreen;
+    public GameObject BaseUI;
 
-    private void Start()
-    {
-        
-    }
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -24,9 +22,8 @@ public class WinBox : MonoBehaviour
     {
         if (Win == true)
         {
-            gameObject.SetActive(true);
+            WinScreen.SetActive(true);
+            BaseUI.SetActive(false);
         }
-
-    }
-    
+    }  
 }
