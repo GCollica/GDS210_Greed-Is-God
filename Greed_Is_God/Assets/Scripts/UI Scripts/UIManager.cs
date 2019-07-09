@@ -53,7 +53,7 @@ public class UIManager : MonoBehaviour
     ////player 4
     public GameObject p4;
     public PManager p4PManager;
-
+    
     //keys
     public Text p4KeyCountText;
     private int p4KeyCountValue;
@@ -65,6 +65,12 @@ public class UIManager : MonoBehaviour
     //health
     public Image p4Heart1, p4Heart2, p4Heart3;
 
+    //Win Screen
+    public Text greedGod;
+    public Text p1FinalScore;
+    public Text p2FinalScore;
+    public Text p3FinalScore;
+    public Text p4FinalScore;
 
     public static int healthStat;
 
@@ -87,16 +93,19 @@ public class UIManager : MonoBehaviour
         //gold
         p1GoldCountValue = p1PManager.goldCount;
         p1GoldCountText.text = "$" + p1GoldCountValue.ToString();
+        p1FinalScore.text = p1GoldCountText.ToString();
 
         p2GoldCountValue = p2PManager.goldCount;
         p2GoldCountText.text = "$" + p2GoldCountValue.ToString();
+        p2FinalScore.text = p2GoldCountText.ToString();
 
         p3GoldCountValue = p3PManager.goldCount;
         p3GoldCountText.text = "$" + p3GoldCountValue.ToString();
+        p3FinalScore.text = p3GoldCountText.ToString();
 
         p4GoldCountValue = p4PManager.goldCount;
         p4GoldCountText.text = "$" + p4GoldCountValue.ToString();
-
+        p4FinalScore.text = p4GoldCountText.ToString();
 
         if (this.gameObject.name == "Player_1")
         {
@@ -113,6 +122,7 @@ public class UIManager : MonoBehaviour
                 p1Heart2.gameObject.SetActive(true);
                 p1Heart3.gameObject.SetActive(false);
             }
+
             if (healthStat == 1)
             {
                 p1Heart1.gameObject.SetActive(true);
@@ -144,6 +154,7 @@ public class UIManager : MonoBehaviour
                 p2Heart2.gameObject.SetActive(true);
                 p2Heart3.gameObject.SetActive(false);
             }
+
             if (healthStat == 1)
             {
                 p2Heart1.gameObject.SetActive(true);
@@ -175,6 +186,7 @@ public class UIManager : MonoBehaviour
                 p3Heart2.gameObject.SetActive(true);
                 p3Heart3.gameObject.SetActive(false);
             }
+
             if (healthStat == 1)
             {
                 p3Heart1.gameObject.SetActive(true);
@@ -206,6 +218,7 @@ public class UIManager : MonoBehaviour
                 p4Heart2.gameObject.SetActive(true);
                 p4Heart3.gameObject.SetActive(false);
             }
+
             if (healthStat == 1)
             {
                 p4Heart1.gameObject.SetActive(true);
