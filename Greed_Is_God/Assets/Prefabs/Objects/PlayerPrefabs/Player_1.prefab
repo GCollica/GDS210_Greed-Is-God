@@ -44,7 +44,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1942702236752684967}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 201f2f40c36a23644b78d3e22a738f4d, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -60,7 +60,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 4
-  m_AngularDrag: 0
+  m_AngularDrag: 2
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 1
@@ -87,7 +87,6 @@ MonoBehaviour:
   player2: 0
   player3: 0
   player4: 0
-  greedGod: {fileID: 0}
 --- !u!114 &1942702236752684966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -102,8 +101,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   invulnerable: 0
-  deathDrop: {fileID: 5446994885961889613, guid: 853660d42ab24e24890fe5f43a8510c7,
-    type: 3}
   goldCount: 0
   keyCount: 2
   arrows: {fileID: 5941164243023837795, guid: d7a9ebc962b5f554a92a7b2be761e4ce, type: 3}
@@ -244,6 +241,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 3bf6ec5d04c0878479ce96f21039b29d,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d13047cca854fc847915a8b6e5decb5b, type: 2}
     - target: {fileID: -4216859302048453862, guid: 3bf6ec5d04c0878479ce96f21039b29d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -314,11 +316,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.809
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 3bf6ec5d04c0878479ce96f21039b29d,
-        type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: d13047cca854fc847915a8b6e5decb5b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3bf6ec5d04c0878479ce96f21039b29d, type: 3}
 --- !u!4 &2611752749680398909 stripped
