@@ -88,7 +88,7 @@ public class UIManager : MonoBehaviour
     void Update()
     {
         healthStat = p1PManager.health;
-
+        /*
         //key
         p1KeyCountValue = p1PManager.keyCount ;
         p1KeyCountText.text = "x " + p1KeyCountValue.ToString();
@@ -118,9 +118,11 @@ public class UIManager : MonoBehaviour
         p4GoldCountValue = p4PManager.goldCount;
         p4GoldCountText.text = "$" + p4GoldCountValue.ToString();
         p4FinalScore.text = p4GoldCountValue.ToString();
-
-        if (this.gameObject.name == "Player_1")
+        */
+        if (gameObject.name == "Player_1")
         {
+            Debug.Log("THISTHISHISISIIS");
+
             if (healthStat == 3)
             {
                 p1Heart1.gameObject.SetActive(true);
