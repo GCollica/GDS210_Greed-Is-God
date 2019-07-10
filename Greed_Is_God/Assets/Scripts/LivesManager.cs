@@ -10,6 +10,7 @@ public class LivesManager : MonoBehaviour
     public GameObject player3;
     public GameObject player4;
 
+    public GameObject LoseScreen;
     void Update()
     {
         EndGame();
@@ -19,7 +20,7 @@ public class LivesManager : MonoBehaviour
     {
         if(livesRemaining == 0 && player1.activeInHierarchy == false && player2.activeInHierarchy == false && player3.activeInHierarchy == false && player4.activeInHierarchy == false)
         {
-            Debug.Log("Game Over");
+            LoseScreen.SetActive(true);
         }
     }
 }
