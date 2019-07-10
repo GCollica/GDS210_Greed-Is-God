@@ -19,6 +19,7 @@ public class PManager : MonoBehaviour
     public float rightTrigger;
 
     private GreedGod greedGod;
+    private LivesManager lManager;
 
     public GameObject crown;
     public bool isGreedGod = false;
@@ -27,6 +28,7 @@ public class PManager : MonoBehaviour
     private void Awake()
     {
         greedGod = FindObjectOfType<GreedGod>();
+        lManager = FindObjectOfType<LivesManager>();
         
     }
 
@@ -62,14 +64,18 @@ public class PManager : MonoBehaviour
 
     void Spawn()
     {
-        this.health = 3;
-        invulnerable = true;
-        gameObject.SetActive(true);        
-        if(player.transform.position != greedGod.currentGreedGod.transform.position)
+        if(lManager.livesRemaining >= 1)
         {
-            player.transform.position = greedGod.currentGreedGod.transform.position;
-        }
-        Invoke("Invulnerability", 5);
+            lManager.livesRemaining --;
+            this.health = 3;
+            invulnerable = true;
+            gameObject.SetActive(true);
+            if (player.transform.position != greedGod.currentGreedGod.transform.position)
+            {
+                player.transform.position = greedGod.currentGreedGod.transform.position;
+            }
+            Invoke("Invulnerability", 5);
+        }       
     }
 
     void Invulnerability()
