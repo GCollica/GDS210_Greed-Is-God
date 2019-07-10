@@ -22,11 +22,12 @@ public class PlayerController : MonoBehaviour
 
     private int score;
 
-    public GreedGod greedGod;
+    private GreedGod greedGod;
     private PManager pManager;
 
     void Awake()
     {
+        greedGod = FindObjectOfType<GreedGod>();
         pManager = gameObject.GetComponent<PManager>();
         rb = GetComponent<Rigidbody>();
         JoystickCheck();

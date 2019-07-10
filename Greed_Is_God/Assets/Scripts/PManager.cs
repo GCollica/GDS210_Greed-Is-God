@@ -109,6 +109,8 @@ public class PManager : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy") && invulnerable == false)
         {
             health -= 1;
+            invulnerable = true;
+            Invoke("Invulnerablity", 2);
             Debug.Log("Ouch");
         }
     }
@@ -138,6 +140,4 @@ public class PManager : MonoBehaviour
             this.gameObject.transform.position = greedGod.currentGreedGod.transform.position;
         }
     }
-
-
 }
