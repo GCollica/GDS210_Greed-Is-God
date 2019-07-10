@@ -21,6 +21,12 @@ public class MenuButtons : MonoBehaviour
         {
             SceneManager.LoadScene("MainMenu");
         }
+        /*
+        if (scene.name == ("Level_One") && Input.GetButtonDown("PauseButton"))
+        {
+            SceneManager.LoadScene("PauseMenu");
+        }
+        */
     }
 }
    
