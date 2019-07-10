@@ -1,18 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LivesManager : MonoBehaviour
 {
-    public int livesRemaining = 5;
+    public int livesRemaining;
     public GameObject player1;
     public GameObject player2;
     public GameObject player3;
     public GameObject player4;
 
+    public Text livesText;
+
     public GameObject LoseScreen;
+
+    private void Start()
+    {
+        livesRemaining = 5;
+    }
+
+
     void Update()
     {
+        livesText.text = livesRemaining.ToString();
+
         EndGame();
     }
 
