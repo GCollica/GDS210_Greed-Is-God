@@ -66,7 +66,7 @@ public class UIManager : MonoBehaviour
     public Image p4Heart1, p4Heart2, p4Heart3;
 
     //Win Screen
-    public Text greedGod;
+    public Text greedGodText;
     public Text p1FinalScore;
     public Text p2FinalScore;
     public Text p3FinalScore;
@@ -74,11 +74,14 @@ public class UIManager : MonoBehaviour
 
     public static int healthStat;
 
+    GreedGod greedGodScript;
+
     // Start is called before the first frame update
     void Start()
     {
         //Health = GameObject.Find("Player_1").GetComponent<PManager>().health = 3;
         healthStat = p1PManager.health;
+        //greedGodText = greedGodScript.currentGreedGod;
     }
 
     // Update is called once per frame
@@ -90,22 +93,31 @@ public class UIManager : MonoBehaviour
         p1KeyCountValue = p1PManager.keyCount ;
         p1KeyCountText.text = "x " + p1KeyCountValue.ToString();
 
+        p2KeyCountValue = p2PManager.keyCount;
+        p2KeyCountText.text = "x " + p2KeyCountValue.ToString();
+
+        p3KeyCountValue = p3PManager.keyCount;
+        p3KeyCountText.text = "x " + p3KeyCountValue.ToString();
+
+        p4KeyCountValue = p4PManager.keyCount;
+        p4KeyCountText.text = "x " + p4KeyCountValue.ToString();
+
         //gold
         p1GoldCountValue = p1PManager.goldCount;
         p1GoldCountText.text = "$" + p1GoldCountValue.ToString();
-        p1FinalScore.text = p1GoldCountText.ToString();
+        p1FinalScore.text = p1GoldCountValue.ToString();
 
         p2GoldCountValue = p2PManager.goldCount;
         p2GoldCountText.text = "$" + p2GoldCountValue.ToString();
-        p2FinalScore.text = p2GoldCountText.ToString();
+        p2FinalScore.text = p2GoldCountValue.ToString();
 
         p3GoldCountValue = p3PManager.goldCount;
         p3GoldCountText.text = "$" + p3GoldCountValue.ToString();
-        p3FinalScore.text = p3GoldCountText.ToString();
+        p3FinalScore.text = p3GoldCountValue.ToString();
 
         p4GoldCountValue = p4PManager.goldCount;
         p4GoldCountText.text = "$" + p4GoldCountValue.ToString();
-        p4FinalScore.text = p4GoldCountText.ToString();
+        p4FinalScore.text = p4GoldCountValue.ToString();
 
         if (this.gameObject.name == "Player_1")
         {

@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7348441513556321247
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1986,7 +1986,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6399855624466860872
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4671,37 +4671,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p1: {fileID: 0}
   p1PManager: {fileID: 0}
-  p1KeyCountText: {fileID: 9083917430670424491}
-  p1GoldCountText: {fileID: 9083917430001017555}
-  p1Heart1: {fileID: 8593764451973308079}
-  p1Heart2: {fileID: 8315655120994850292}
-  p1Heart3: {fileID: 8029596829486368378}
+  p1KeyCountText: {fileID: 0}
+  p1GoldCountText: {fileID: 0}
+  p1Heart1: {fileID: 0}
+  p1Heart2: {fileID: 0}
+  p1Heart3: {fileID: 0}
   p2: {fileID: 0}
   p2PManager: {fileID: 0}
-  p2KeyCountText: {fileID: 9083917431513071107}
-  p2GoldCountText: {fileID: 9083917430609334517}
-  p2Heart1: {fileID: 7726194439900825482}
-  p2Heart2: {fileID: 9039280955597498155}
-  p2Heart3: {fileID: 3855071499924249969}
+  p2KeyCountText: {fileID: 0}
+  p2GoldCountText: {fileID: 0}
+  p2Heart1: {fileID: 0}
+  p2Heart2: {fileID: 0}
+  p2Heart3: {fileID: 0}
   p3: {fileID: 0}
   p3PManager: {fileID: 0}
-  p3KeyCountText: {fileID: 9083917429899661125}
-  p3GoldCountText: {fileID: 9083917429609652576}
-  p3Heart1: {fileID: 8071771004191267801}
-  p3Heart2: {fileID: 8697529059912819982}
-  p3Heart3: {fileID: 7102241727099614558}
+  p3KeyCountText: {fileID: 0}
+  p3GoldCountText: {fileID: 0}
+  p3Heart1: {fileID: 0}
+  p3Heart2: {fileID: 0}
+  p3Heart3: {fileID: 0}
   p4: {fileID: 0}
   p4PManager: {fileID: 0}
-  p4KeyCountText: {fileID: 9083917431362266995}
-  p4GoldCountText: {fileID: 9083917430700380404}
-  p4Heart1: {fileID: 8901623537925213411}
-  p4Heart2: {fileID: 3237329805129802377}
-  p4Heart3: {fileID: 7838092660885028456}
-  greedGod: {fileID: 6518763535825301161}
-  p1FinalScore: {fileID: 1988061145298412236}
-  p2FinalScore: {fileID: 8775216655883886440}
-  p3FinalScore: {fileID: 2174626596711559885}
-  p4FinalScore: {fileID: 6225685535406956126}
+  p4KeyCountText: {fileID: 0}
+  p4GoldCountText: {fileID: 0}
+  p4Heart1: {fileID: 0}
+  p4Heart2: {fileID: 0}
+  p4Heart3: {fileID: 0}
+  greedGod: {fileID: 0}
+  p1FinalScore: {fileID: 0}
+  p2FinalScore: {fileID: 0}
+  p3FinalScore: {fileID: 0}
+  p4FinalScore: {fileID: 0}
 --- !u!1 &9083917431277791952
 GameObject:
   m_ObjectHideFlags: 0
