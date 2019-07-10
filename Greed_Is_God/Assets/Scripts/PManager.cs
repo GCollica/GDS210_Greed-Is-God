@@ -38,21 +38,6 @@ public class PManager : MonoBehaviour
         {
             Dead();
         }
-
-        //if (greedGod.greedGodScore == goldCount)
-        //{
-        //    isGreedGod = true;
-        //}
-
-        //if (isGreedGod == true)
-        //{
-        //    crown.SetActive(true);
-        //}
-
-        //if (isGreedGod == false)
-        //{
-        //    crown.SetActive(false);           
-        //}
     }
 
     void Dead()
@@ -110,7 +95,7 @@ public class PManager : MonoBehaviour
         {
             health -= 1;
             invulnerable = true;
-            Invoke("Invulnerablity", 2);
+            Invoke("Invulnerability", 2);
             Debug.Log("Ouch");
         }
     }
