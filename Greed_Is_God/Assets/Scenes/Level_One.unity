@@ -9924,8 +9924,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4121225770223354618, guid: c932f88302eeef249926fd6cdebd7bff,
         type: 3}
+<<<<<<< HEAD
       propertyPath: m_Textures0.Array.data[339].y
       value: 0.00006612092
+=======
+      propertyPath: m_IsActive
+      value: 1
+>>>>>>> parent of 67382f8... Update Level_One.unity
       objectReference: {fileID: 0}
     - target: {fileID: 4121225770223354618, guid: c932f88302eeef249926fd6cdebd7bff,
         type: 3}
@@ -43541,7 +43546,7 @@ PrefabInstance:
     - target: {fileID: 4441978072335166547, guid: ad526d85d757c31439c66f69ef0c881b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4441978072335166546, guid: ad526d85d757c31439c66f69ef0c881b,
         type: 3}
@@ -48832,7 +48837,7 @@ PrefabInstance:
     - target: {fileID: 2744871216446336438, guid: 3e81e832df767984986b093a8ebf1895,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2744871216446336435, guid: 3e81e832df767984986b093a8ebf1895,
         type: 3}
