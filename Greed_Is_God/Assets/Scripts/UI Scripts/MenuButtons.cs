@@ -10,6 +10,7 @@ public class MenuButtons : MonoBehaviour
     public void SceneButton(string myInput)
     {
         SceneManager.LoadScene(myInput);
+        Debug.Log("pressed");
     }
 
     void Update()
