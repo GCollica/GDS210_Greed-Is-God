@@ -28,5 +28,10 @@ public class MenuButtons : MonoBehaviour
         }
         */
     }
+
+    public void QuitButton()
+    {
+        Application.Quit();
+    }
 }
    

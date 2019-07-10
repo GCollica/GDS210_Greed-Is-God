@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BossHealth : MonoBehaviour
 {
@@ -27,8 +28,7 @@ public class BossHealth : MonoBehaviour
 
         if (isDead == true)
         {
-            winScreen.SetActive (true);
-            playerScreen.SetActive(false);
+            SceneManager.LoadScene("MainMenu");
         }
     }
 

@@ -86,6 +86,7 @@ public class PManager : MonoBehaviour
             if(health <= 2)
             {
                 health++;
+                FindObjectOfType<AudioManager>().Play("FoodPickup");
             }
 
             Destroy(collision.gameObject);
